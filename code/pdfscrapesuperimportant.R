@@ -2,7 +2,7 @@
 # read in ward and constituency link
 # table from the NBS 2015
 
-setwd("C:/Users/Tomas/Documents/LEI/Afripol/TZA/data")
+setwd("C:/Users/Tomas/Documents/LEI/pol/data")
 
 
 # use regex to order the information the way

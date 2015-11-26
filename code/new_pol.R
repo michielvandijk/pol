@@ -5,12 +5,14 @@
 # -------------------------------------
 # use ward shapefile from the NBS 2012
 
-setwd("C:/Users/Tomas/Documents/LEI/Afripol/TZA/2012 Wards Shapefiles")
+setwd("C:/Users/Tomas/Documents/LEI/pol/data/2012 Wards Shapefiles")
 
 library(rgdal)
 ogrListLayers("TZwards.shp")
 TZA <- readOGR("TZwards.shp", layer="TZwards")
-TZA@data$Ward_Name <- toupper(TZA@data$Ward_Name)
+wards <- toupper(TZA@data$Ward_Name)
+"NHOMOLWA" %in% wards
+
 
 # -------------------------------------
 # read in dataframe which matches wards
@@ -39,7 +41,6 @@ table(missing$District_N[drop=TRUE])
 # missing four wards
 missing[missing$Region_Nam %in% "Pwani",]
 missing[missing$Region_Nam %in% "Katavi",]
-missing[missing$Region_Nam %in% "Pwani",]
 
 # missing five wards
 missing[missing$Region_Nam %in% "Njombe",]

@@ -196,14 +196,14 @@ DAR ES SALAAM             MANISPAA YA ILALA                ILALA                
               MANISPAA YA KINONDONI           KAWE                           1   BUNJU                           196 
                                                                              2   KAWE                            197 
                                                                              3   KUNDUCHI                        198 
-                                                                             4   MABWE BANDE                     199 
+                                                                             4   MABWEPANDE                      199 
                                                                              5   MAKONGO                         200 
                                                                              6   MBEZI JUU                       201 
                                                                              7   MBWENI                          202 
                                                                              8   MIKOCHENI                       203 
                                                                              9   MSASANI                         204 
                                                                             10   WAZO                            205 
-                                              KINONDONI                      1   HANANASIF                       206 
+                                              KINONDONI                      1   HANANASIFU                      206 
                                                                              2   KIGOGO                          207 
                                                                              3   KIJITONYAMA                     208 
                                                                              4   KINONDONI                       209 
@@ -227,8 +227,8 @@ DAR ES SALAAM             MANISPAA YA ILALA                ILALA                
                                                                                     6    KIMARA                            227 
                                                                                     7    SINZA                             228 
                                                                                     8   UBUNGO                             229 
-               MANISPAA YA TEMEKE                  MBAGALA                          1   MBAGARA KUU                        230 
-                                                                                    2   MBAGARA                            231 
+               MANISPAA YA TEMEKE                  MBAGALA                          1   MBAGALA KUU                        230 
+                                                                                    2   MBAGALA                            231 
                                                                                     2    CHARAMBE                          232 
                                                                                     3    CHAMAZI                           233 
                                                                                     4    KIJICHI                           234 
@@ -251,7 +251,7 @@ DAR ES SALAAM             MANISPAA YA ILALA                ILALA                
                                                                                     2    KILAKALA                          251 
                                                                                     3    CHANG'OMBE                        252 
                                                                                     4    KEKO                              253 
-                                                                                    5   MAKANGALAWE                        254 
+                                                                                    5   MAKANGARAWE                        254 
                                                                                     6    KURASINI                          255 
                                                                                     7   BUZA                               256 
                                                                                     8   MIBURANI                           257 
@@ -284,7 +284,7 @@ DODOMA               MANISPAA YA DODOMA                 DODOMA MJINI            
                                                                                           22 MSALATO                           284 
                                                                                           23 MTUMBA                            285 
                                                                                           24 NALA                              286 
-                                                                                          25 NG'ONG'ONAH                       287 
+                                                                                          25 NGH'ONGH'ONHA                       287 
                                                                                           26 NZUGUNI                           288 
                                                                                           27 TAMBUKA RELI                      289 
                                                                                           28 UHURU                             290 
@@ -345,7 +345,7 @@ DODOMA               MANISPAA YA DODOMA                 DODOMA MJINI            
                                                                                       5 IDIFU                              345 
                                                                                       6 IGANDU                             346 
                                                                                       8 NGAHELEZI                          347 
-                                                                                      9 IRINGA MVUMI                       348 
+                                                                                      9 IRINGAMVUMI                       348 
                                                                                      10 IKOMBOLINGA                        349 
                                                                                      11 MAKANG'WA                          350 
                                                                                      12 MANDA                              351 
@@ -376,7 +376,7 @@ DODOMA               MANISPAA YA DODOMA                 DODOMA MJINI            
                                                                                      15 THAWI                              376 
                                                                                      16 SALANKA                            377 
                                                                                      17 ITASWI                             378 
-                                                                                     18 HONDOMAIRO                         379 
+                                                                                     18 HONDO MAIRO                         379 
                                                                                      19 ITOLOLO                            380 
                                                                                      20 KINYASI                            381 
                                                                                      21 KEIKEI                             382 
@@ -462,7 +462,7 @@ DODOMA               MANISPAA YA DODOMA                 DODOMA MJINI            
                                                                                           6 MAZAE                            462 
                                                                                           7 MIMA                             463 
                                                                                           8 MPWAPWA URBAN                    464 
-                                                                                          9 VINGHAWE                         465 
+                                                                                          9 VINGH'AWE                         465 
                                                                                          10 CHITEMO                          466 
                                                                                          11 IWONDO                           467 
                                                                                          12 GULWE                            468 
@@ -487,7 +487,7 @@ GEITA                 MJI GEITA                        GEITA MJINI              
                                                                                    3 IZUNYA                           486 
                                                                                    4  KABOHA                          487 
                                                                                    5 KAFITA                           488 
-                                                                                   6 KAKORA                           489 
+                                                                                   6 KAKURA                           489 
                                                                                    7 KHARUMWA                         490 
                                                                                    8 MWINGIRO                         491 
                                                                                    9 NUNDU                            492 
@@ -558,10 +558,10 @@ GEITA                 MJI GEITA                        GEITA MJINI              
                                                                               19 NYAMWILOLELWA                  557 
                                                                              20 NYARUGUSU                       558 
                                                                              21 NYARUYEYE                       559 
-                                                                             22 RWAMGASA                        560 
+                                                                             22 LWAMGASA                        560 
                                               GEITA                            1 BUGALAMA                       561 
                                                                                2 BUGULULA                       562 
-                                                                               3 ISULWABUTUNDWE                 563 
+                                                                               3 ISULWABUTUNDE                  563 
                                                                                4  IZUMACHELI                    564 
                                                                                5 KAGU                           565 
                                                                                6 KAKUBILO                       566 
@@ -586,9 +586,9 @@ GEITA                 MJI GEITA                        GEITA MJINI              
                                                                                             10 MASUMBWE                           585 
                                                                                             11 MBOGWE                             586 
                                                                                             12 NANDA                              587 
-                                                                                            13 NGEMO                              588 
-                                                                                            14 NHOMOLWA                           589 
-                                                                                            15 NYAKAFURU                          590 
+                                                                                            13 MGEMO                              588 
+                                                                                            14 NG'HOMOLWA                           589 
+                                                                                            15 NYAKAFULU                          590 
                                                                                             16 NYASATO                            591 
                                                                                             17 USHIRIKA                           592 
 IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI                       1  GANGILONGA                        593 
@@ -914,10 +914,10 @@ KATAVI               1.  MANISPAA MPANDA               MPANDA MJINI             
                                                                                         8 KAPALAMSENGA                    913 
                                                                                         9 ISENGULE                        914 
                                                                                        10 KESEKESE                        915 
-                                                                                       11 SIMBWESA                        916 
+                                                                                       11 SIBWESA                         916 
                                                                                        12 MNYAGALA                        917 
                                                                                        13 TONGWE                          918 
-                                                                                       14 MPANDANDOGO                     919 
+                                                                                       14 MPANDA NDOGO                    919 
                                                                                             15 ILANGU                             920 
                                                                                             16 BULAMATA                           921 
                       3. WILAYA YA MLELE                  2. MLELE(KATAVI)                   1 ILELA                              922 
@@ -2643,7 +2643,7 @@ NJOMBE              1.  MJI WA NJOMBE                NJOMBE MJINI               
                                                                                     6 MFRIGA                         2,640 
                                                                                     7 IKUNA                          2,641 
                                                                                     8 IDAMBA                         2,642 
-                                                                                    9 KIDEGEMBYA                     2,643 
+                                                                                    9 KIDEGEMBYE                     2,643 
                                                                                   10 NINGA                           2,644 
                                                                                   11 IGONGOLO                        2,645 
                                                                                   12 KICHIWA                         2,646 
@@ -2656,7 +2656,7 @@ NJOMBE              1.  MJI WA NJOMBE                NJOMBE MJINI               
                                                                                     7 MJIMWEMA                       2,653 
                                                                                     8 KITISI                         2,654 
                                                                                     9 KITAVI                         2,655 
-                                                                                  10 KITANDALILO                     2,656 
+                                                                                  10 KITANDILILO                     2,656 
                                                                                   11 MAHONGOLE                       2,657 
                                                                                   12 UTENGULE                        2,658 
                WILAYA YA LUDEWA                  LUDEWA                             1 IBUMI                          2,659 
@@ -2692,11 +2692,11 @@ NJOMBE              1.  MJI WA NJOMBE                NJOMBE MJINI               
                                                                                         5 IPEPO                          2,689 
                                                                                         6 IWAWA                          2,690 
                                                                                         7 KIGULU                         2,691 
-                                                                                        8 KAPAGALO                       2,692 
+                                                                                        8 KIPAGALO                       2,692 
                                                                                         9 KITULO                         2,693 
                                                                                        10 LUPALILO                       2,694 
                                                                                        11 LUPILA                         2,695 
-                                                                                       12 MANGO'TO                       2,696 
+                                                                                       12 MANG'OTO                       2,696 
                                                                                        13 MATAMBA                        2,697 
                                                                                        14 MBALATSE                       2,698 
                                                                                        15 MFUMBI                         2,699 
@@ -2762,7 +2762,7 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                          12  MTAMBANI                     2,759 
                                                                          13  MTONGANE                     2,760 
                                                                          14  KAWAWA                       2,761 
-             WILAYA YA KISARAWE             KISARAWE                     1   CHOLE SAMVUA                 2,762 
+             WILAYA YA KISARAWE             KISARAWE                     1   CHOLESAMVULA                 2,762 
                                                                          2   KIBUTA                       2,763 
                                                                          3   KILUVYA                      2,764 
                                                                          4   KISARAWE                     2,765 
@@ -2776,7 +2776,7 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                                 12  MSIMBU                          2,773 
                                                                                 13  MZENGA                          2,774 
                                                                                 14  VIHINGO                         2,775 
-                                                                                15  VIKUMBURU                       2,776 
+                                                                                15  VIKUMBULU                       2,776 
                                                                                 16  KAZIMZUMBWI                     2,777 
                                                                                 17  BOGA                            2,778 
               WILAYA YA MAFIA                   MAFIA                           1   BALENI                          2,779 
@@ -2788,7 +2788,7 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                                 7   MIBURANI                        2,785 
                                                                                 8   NDAGONI                         2,786 
               WILAYA YA MKURANGA                MKURANGA                        1   BUPU                            2,787 
-                                                                                2   KAPARANG'ANDA                   2,788 
+                                                                                2   KIPARANG'ANDA                   2,788 
                                                                                 3   KIMANZICHANA                    2,789 
                                                                                 4   KISIJU                          2,790 
                                                                                 5   KITOMONDO                       2,791 
@@ -2798,7 +2798,7 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                                 9   MKAMBA                          2,795 
                                                                                 10  MKURANGA                        2,796 
                                                                                 11  MWARUSEMBE                      2,797 
-                                                                                12  NJIANNE                         2,798 
+                                                                                12  NJIA NNE                        2,798 
                                                                                 13  NYAMATO                         2,799 
                                                                                 14  PANZUO                          2,800 
                                                                                 15  SHUNGUBWENI                     2,801 
