@@ -594,7 +594,7 @@ GEITA                 MJI GEITA                        GEITA MJINI              
 IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI                       1  GANGILONGA                        593 
                                                                                              2  ILALA                             594 
                                                                                              3 KIHESA                             595 
-                                                                                             4  KITANZINI/MIOMBONI                596 
+                                                                                             4  KITANZINI                    596 
                                                                                              5  KITWIRU                           597 
                                                                                              6 KWAKILOSA                          598 
                                                                                              7 MAKORONGONI                        599 
@@ -614,7 +614,7 @@ IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI          
                                                                                      3 ITUNUNDU                          613 
                                                                                      4 IZAZI                             614 
                                                                                      5 KIHOROGOTA                        615 
-                                                                                     6 MALENGAMAKALI                     616 
+                                                                                     6 MALENGA MAKALI                    616 
                                                                                      7  MLOWA                            617 
                                                                                      8 MAHUNINGA                         618 
                                                                                      9 MLENGE                           619 
@@ -627,7 +627,7 @@ IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI          
                                                                                      3 KIWERE                            626 
                                                                                      4 LUMULI                            627 
                                                                                      5 MABOGA                            628 
-                                                                                     6 MAGULILWA                         629 
+                                                                                     6 MAGULIWA                          629 
                                                                                      7 MGAMA                             630 
                                                                                      8 MSEKE                             631 
                                                                                      9 NZIHI                             632 
@@ -658,7 +658,7 @@ IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI          
                                                                                           19 LUGALO                            657 
                                                                                           20 RUAHA MBUYUNI                     658 
                                                                                           21 IHIMBO                            659 
-                                                                                          22 NG'UUHE                           660 
+                                                                                          22 NG'URUHE                           660 
                                                                                           23 KISINGH'A                         661 
                                                                                           24 NYANZWA                           662 
                      6.  WILAYA YA MUFINDI              1. MUFINDI KASK.                   1 IKWEHA                            663 
@@ -667,7 +667,7 @@ IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI          
                                                                                            4 KIBENGU                           666 
                                                                                            5 IHALIMBA                          667 
                                                                                            6 MAPANDA                           668 
-                                                                                           7 MPANGA TAZARA                     669 
+                                                                                           7 MPANGA                         669 
                                                                                            8 IFWAGI                            670 
                                                                                            9 IKONGOSI                          671 
                                                                                           10 MDABULO                           672 
@@ -896,7 +896,7 @@ KATAVI               1.  MANISPAA MPANDA               MPANDA MJINI             
                                                                                         5 NSEMULWA                        895 
                                                                                         6 SHANWE                          896 
                                                                                         7 MAKANYAGIO                      897 
-                                                                                        8 MPANDA HOTELI                   898 
+                                                                                        8 MPANDA HOTEL                    898 
                                                                                         9 KAKESE                          899 
                                                                                        10 MAJENGO                         900 
                                                                                        11 UWANJA WA NDEGE                 901 
