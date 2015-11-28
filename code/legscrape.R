@@ -80,8 +80,8 @@ leg10$party <- leg10$party %>% as.factor
 
 leg05$sex <- leg05$sex %>% as.factor
 
-write.table(leg05, "C:/Users/Tomas/Documents/leg05.txt", row.names=FALSE)
-write.table(leg10, "C:/Users/Tomas/Documents/leg10.txt", row.names=FALSE)
+write.table(leg05, "C:/Users/Tomas/Documents/LEI/pol/data/leg05.txt", row.names=FALSE)
+write.table(leg10, "C:/Users/Tomas/Documents/LEI/pol/data/leg10.txt", row.names=FALSE)
 
 
 
