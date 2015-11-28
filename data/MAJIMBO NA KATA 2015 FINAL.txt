@@ -2964,7 +2964,7 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
                                                                                 5 KAMBARAGE                      2,961 
                                                                                 6 LANGIRO                        2,962 
                                                                                 7 MPAPA                          2,963 
-                                                                                8 MYONI                          2,964 
+                                                                                8 NYONI                          2,964 
                                                                                 9 KITURA                         2,965 
                                                                                10 LITEMBO                        2,966 
                                                                                11 NGIMA                          2,967 
@@ -2979,14 +2979,14 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
                                                                                20 RUANDA                         2,976 
                                                                                21 LITUMBANDYOSI                  2,977 
                                                                                22 AMANI MAKOLO                   2,978 
-                                                                               23 KIHANGA MAHUKA                 2,979 
+                                                                               23 KIHANGI MAHUKA                 2,979 
                                                                                24 LUKARASI                       2,980 
                                                                                25 MHONGOZI                       2,981 
                                                                                26 MKAKO                          2,982 
                                                                                27 KIGONSERA                      2,983 
                                                                                28 KITUMBALOMO                    2,984 
                                                                                29 MBUJI                          2,985 
-              WILAYA YA  NYASA                 NYASA                            1 MBAMBA BAY                     2,986 
+              WILAYA YA  NYASA                 NYASA                            1 MBAMBABAY                      2,986 
                                                                                 2 MTIPWILI                       2,987 
                                                                                    3 CHIWANDA                       2,988 
                                                                                    4 KILOSA                         2,989 
@@ -3030,14 +3030,14 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
               4.   WILAYA YA  SONGEA             PERAMIHO                          1 PERAMIHO                       3,027 
                                                                                    2 PARANGU                        3,028 
                                                                                    3 MAPOSENI                       3,029 
-                                                                                   4 MPANDANGINDO                   3,030 
+                                                                                   4 MPANDANGINO                    3,030 
                                                                                    5 KILAGANO                       3,031 
                                                                                6 LIGANGA                        3,032 
                                                                                7 LITISHA                        3,033 
                                                                                8 MATIMILA                       3,034 
                                                                                9 LILAHI                         3,035 
-                                                                              10 MUHUKURU                       3,036 
-                                                                              11 MAGAGULA                       3,037 
+                                                                              10 MUHUKUKU                       3,036 
+                                                                              11 MAGAGURA                       3,037 
                                                                               12 KIZUKA                         3,038 
                                                                               13 MBINGA MHALULE                 3,039 
                                                                               14 NDONGOSI                       3,040 
@@ -3061,10 +3061,10 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
                                                                                8 MFARANYAKI                     3,058 
                                                                                9 TOWNSHIP - MJINI               3,059 
                                                                               10  MLETELE                       3,060 
-                                                                              11 SEED FARM 1                    3,061 
+                                                                              11 SEEDFARM                       3,061 
                                                                               12 MSHANGANO                      3,062 
                                                                               13 MSAMALA                        3,063 
-                                                                              14 MSUFINI                        3,064 
+                                                                              14 MISUFINI                        3,064 
                                                                               15 RUHUWIKO                       3,065 
                                                                               16 MWENGEMSHINDO                  3,066 
                                                                               17 RUVUMA                         3,067 
@@ -3080,8 +3080,8 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
                                                                                         6 NGAPA                          3,077 
                                                                                         7 MINDU                          3,078 
                                                                                         8 MUHUWESI                       3,079 
-                                                                                        9 MLINGOTINI MASHARIKI           3,080 
-                                                                                       10 MLINGOTINI MAGHARIBI           3,081 
+                                                                                        9 MLINGOTI MASHARIKI             3,080 
+                                                                                       10 MLINGOTI MAGHARIBI             3,081 
                                                                                        11 NAMPUNGU                       3,082 
                                                                                        12 KIDODOMA                       3,083 
                                                                                        13 NANDEMBO                       3,084 
@@ -3089,7 +3089,7 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
                                                                                        15 NAMIUNGO                       3,086 
                                                                                        16 MASONYA                        3,087 
                                                                                        17 MCHANGANI                      3,088 
-                                                                                       18 SISI KWA SISI                  3,089 
+                                                                                       18 SISIKWASISI                    3,089 
                                                                                        19 NAKAYAYA                       3,090 
                                                                                        20 MAJENGO                        3,091 
                                                                                        21 NANJOKA                        3,092 
