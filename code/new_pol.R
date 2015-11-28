@@ -11,7 +11,7 @@ library(rgdal)
 ogrListLayers("TZwards.shp")
 TZA <- readOGR("TZwards.shp", layer="TZwards")
 wards <- toupper(TZA@data$Ward_Name)
-"MAGULILWA" %in% wards
+"KIRAPAMNERO" %in% wards
 
 
 # -------------------------------------
@@ -46,6 +46,7 @@ missing[missing$Region_Nam %in% "Katavi",]
 missing[missing$Region_Nam %in% "Njombe",]
 missing[missing$Region_Nam %in% "Dar-es-salaam",]
 
+
 # missing six wards
 missing[missing$Region_Nam %in% "Dodoma",]
 missing[missing$Region_Nam %in% "Geita",]
@@ -76,4 +77,16 @@ missing[missing$Region_Nam %in% "Manyara",]
 missing[missing$Region_Nam %in% "Mara",]
 missing[missing$Region_Nam %in% "Kilimanjaro",]
 
-#
+# missing sixteen wards
+missing[missing$Region_Nam %in% "Tanga",]
+missing[missing$Region_Nam %in% "Ruvuma",]
+
+# missing seventeen wards
+missing[missing$Region_Nam %in% "Mtwara",]
+
+# missing eighteen wards
+missing[missing$Region_Nam %in% "Tabora",]
+
+
+# missing twenty two wards
+missing[missing$Region_Nam %in% "Arusha",]

@@ -1,5 +1,5 @@
 ﻿ARUSHA                  MANISPAA YA ARUSHA                      ARUSHA  MJINI                           1 BARAA                                    1 
-                                                                                                        2 DARAJA II                                2 
+                                                                                                        2 DARAJA MBILI                                2 
                                                                                                         3 ELERAI                                   3 
                                                                                                         4 ENGUTOTO                                 4 
                                                                                                         5 KALOLENI                                 5 
@@ -8,13 +8,13 @@
                                                                                                         8 LEMARA                                   8 
                                                                                                         9 LEVOLOSI                                 9 
                                                                                                       10 NGARENARO                                10 
-                                                                                                      11 OLOIRIEN                                 11 
+                                                                                                      11 OLOIRIENI                                 11 
                                                                                                       12 SEKEI                                    12 
-                                                                                                      13 SOKON                                    13 
+                                                                                                      13 SOKONI I                                    13 
                                                                                                       14 SOMBETINI                                14 
                                                                                                       15 TERRAT                                   15 
                                                                                                       16 THEMI                                    16 
-                                                                                                      17 UNGA LIMITED                             17 
+                                                                                                      17 UNGA LTD                             17 
                                                                                                       18 MOSHONO                                  18 
                                                                                                       19 OLASITI                                  19 
                                                                                                       20 SINONI                                   20 
@@ -31,21 +31,21 @@
                                                                                                         6 KISONGO                                 31 
                                                                                                         7 MLANGARINI                              32 
                                                                                                         8 MOIVO                                   33 
-                                                                                                        9 MUSA                                    34 
-                                                                                                      10 MWANDITI                                 35 
+                                                                                                        9 MUSSA                                    34 
+                                                                                                      10 MWANDETI                                 35 
                                                                                                       11 NDURUMA                                  36 
                                                                                                       12 OLDONYOSAMBU                             37 
                                                                                                       13 OLJORO                                   38 
                                                                                                       14 OLKOKOLA                                 39 
                                                                                            15 OLTRUMET                               40 
-                                                                                           16 OLTUROTO                               41 
+                                                                                           16 OLTOROTO                               41 
                                                                                            17 SOKON II                               42 
                                                                                            18 SAMBASHA                               43 
                                                                                            19 OLMOTONYI                              44 
-                                                                                           20 OLERIEN                                45 
+                                                                                           20 OLORIENI                                45 
                                                                                            21 LEMANYATA                              46 
                                                                                            22 OLDONYOWASSI                           47 
-                                                                                           23 MATEVISI                               48 
+                                                                                           23 MATEVES                               48 
                                                                                            24 LAROI                                  49 
                                                                                            25 KIUTU                                  50 
                                                                                            26 TARAKWA                                51 
@@ -60,21 +60,21 @@
                                                                                             8 KARATU                                 60 
                                                                                             9 MANG'OLA                               61 
                                                                                            10 MBULUMBULU                             62 
-                                                                                           11 OLDEANI                                63 
+                                                                                           11 OLDEAN                                63 
                                                                                            12 QURUS                                  64 
                                                                                            13 RHOTIA                                 65 
-                                                                                           14 ENDAMAGHAN                             66 
+                                                                                           14 ENDAMAGHANG                             66 
                  WILAYA YA LONGIDO                    LONGIDO                                1 ENGARENAIBOR                          67 
                                                                                             2 GELAI LUMBWA                           68 
-                                                                                            3 GELAI MEINGOI                          69 
-                                                                                            4 KETUMBEINE                             70 
+                                                                                            3 GELAI MEIRUGOI                          69 
+                                                                                            4 KITUMBEINE                             70 
                                                                                             5 LONGIDO                                71 
                                                                                             6 MATALE                                 72 
                                                                                             7 NAMANGA                                73 
-                                                                                            8 OL-MOLOG                               74 
+                                                                                            8 OLMOLOG                               74 
                                                                                             9 TINGATINGA                             75 
                                                                                            10 MUNDARARA                              76 
-                                                                                           11 ELANG'ATADAPASH                        77 
+                                                                                           11 ELENG'ATA DAPASH                        77 
                                                                                            12 ILORIENITO                             78 
                                                                                            13 ENGIKARET                              79 
                                                                                            14 ORBOMBA                                80 
@@ -91,16 +91,16 @@
                                                                                             7 NAIYOBI                               91 
                                                                                             8 NGORONGORO                            92 
                                                                                             9 OLBALBAL                              93 
-                                                                                          10 OLDONYOSAMBU                           94 
-                                                                                          11 OLGOSOROK                              95 
+                                                                                          10 OLDONYO SAMBU                          94 
+                                                                                          11 ORGOSOROK                              95 
                                                                                           12 PINYINYI                               96 
                                                                                           13 SALE                                   97 
                                                                                           14 SOITSAMBU                              98 
-                                                                                          15 MAALONI                                99 
+                                                                                          15 MAALON                                 99 
                                                                                           16 SAMUNGE                               100 
                                                                                           17 ALAILELAI                             101 
-                                                                                          18 ENGUSEROSAMBU                         102 
-                                                                                          19 OLOIRIEN/MAGAIDURU                    103 
+                                                                                          18 ENGUSERO SAMBU                         102 
+                                                                                          19 OLOIRIEN                      103 
                                                                                           20 OLOLOSOKWAN                           104 
                                                                                           21 OLOIPIRI                              105 
                                                                                           22 NGOILE                                106 
@@ -127,7 +127,7 @@
                                                                                           14 POLI                                  127 
                                                                                               15 SEELA SING'ISI                      128 
                                                                                               16 SONGORO                             129 
-                                                                                              17 USA RIVER                           130 
+                                                                                              17 USARIVER                           130 
                                                                                               18 SHABALAIBURKA                       131 
                                                                                               19 MALULA                              132 
                                                                                               20 UWILO                               133 
@@ -144,14 +144,14 @@
                                                                                                5 MAKUYUNI                            144 
                                                                                                6 MOITA                               145 
                                                                                                7 MONDULI JUU                         146 
-                                                                                               8 MONDULU MJINI                       147 
+                                                                                               8 MONDULI MJINI                       147 
                                                                                                9 MTO WA MBU                          148 
                                                                                               10 SELELA                              149 
                                                                                               11 SEPEKO                              150 
                                                                                               12 MESERANI                            151 
                                                                                               13 MAJENGO                             152 
                                                                                               14 MSWAKINI                            153 
-                                                                                              15 LEPULIKO                            154 
+                                                                                              15 LEPURKO                             154 
                                                                                               16 MFEREJI                             155 
                                                                                               17 LASHAINE                            156 
                                                                                               18 NAALARAMI                           157 
@@ -637,7 +637,7 @@ IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI          
                                                                                     13 LYAMGUNGWE                        636 
                                                                                     14 KIHANGA                           637 
                                                                                     15 MASAKA                            638 
-               WILAYA YA  KILOLO                  KILOLO                             1 BOMALANG'OMBE                     639 
+               WILAYA YA  KILOLO                  KILOLO                             1 BOMA LA NG'OMBE                   639 
                                                                                      2 DABAGA                            640 
                                                                                      3 IDETE                             641 
                                                                                      4 ILULA                             642 
@@ -1292,11 +1292,11 @@ LINDI                 MANISPAA LINDI                   LINDI MJINI              
                                                                              2   MASOKO                         1,291 
                                                                              3   SONGOSONGO                     1,292 
                                                                              4   KIVINJESINGINO                 1,293 
-                                                                             5   PANDE MIKOMA                   1,294 
+                                                                             5   PANDE                          1,294 
                                                                              6   LIKAWAGE                       1,295 
-                                                                             7   NAJIRINJI                      1,296 
+                                                                             7   NANJIRINJI                      1,296 
                                                                              8   LIHIMALYAO                     1,297 
-                                                                             9   KIRANJERANJE                   1,298 
+                                                                             9   KIRNJERNJE                     1,298 
                                                                              10  KIKOLE                         1,299 
                WILAYA YA  LINDI               MCHINGA                        1   KILOLAMBWANI                   1,300 
                                                                              2   KIWAWA                         1,301 
@@ -1352,7 +1352,7 @@ LINDI                 MANISPAA LINDI                   LINDI MJINI              
                                                                              20   KICHONDA                      1,351 
               WILAYA YA  NACHINGWEA            NACHINGWEA                     1   CHIOLA                        1,352 
                                                                               2   KIEGEI                        1,353 
-                                                                              3   KILIMARONDO                   1,354 
+                                                                              3   KILIMA RONDO                  1,354 
                                                                               4   KILIMANIHEWA                  1,355 
                                                                               5   KIRAPAMNERO                   1,356 
                                                                               6   LIONJA                        1,357 
@@ -1361,8 +1361,8 @@ LINDI                 MANISPAA LINDI                   LINDI MJINI              
                                                                          9   MBONDO                       1,360 
                                                                          10  MKOTOKUYANA                  1,361 
                                                                          11  MKOKA                        1,362 
-                                                                         12  MNERO MIEMBENI               1,363 
-                                                                         13  MNERONGONGO                  1,364 
+                                                                         12  MINERO MIEMBENI              1,363 
+                                                                         13  MINERONGONGO                 1,364 
                                                                          14  MPIRUKA                      1,365 
                                                                          15  MTUA                         1,366 
                                                                          16  NAIPANGA                     1,367 
@@ -2878,7 +2878,7 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                                      5 NAMANYERE                       2,875 
                                                                                      6 KIPILI                          2,876 
                                                                                      7 NKOMOLO                         2,877 
-                                                                                     8 KOROGWE                         2,878 
+                                                                                     8 KORONGWE                        2,878 
                                                                                      9 MAJENGO                         2,879 
                                                                                     10 ISONTA                          2,880 
                                                                                     11 KIPINDU                         2,881 
@@ -2906,12 +2906,12 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                                     16 KALAMBANZITE                  2,903 
                                                                                     17 SANDULULA                     2,904 
                                                                                     18 MPWAPWA                       2,905 
-                                                                                    19 KAHENGESA                     2,906 
+                                                                                    19 KAENGESA                      2,906 
                                                                                     20 LYANGALILE                    2,907 
                                                                                     21 KANDA                         2,908 
                                                                                     22 LUSAKA                        2,909 
-                                                                                    23 MYANGALUA                     2,910 
-                                                                                    24 MSANDA MUUGANO                2,911 
+                                                                                    23 MIANGALUA                     2,910 
+                                                                                    24 MSANDA MUUNGANO               2,911 
                                                                                     25 LAELA                         2,912 
                                                                                     25 KASANZAMA                     2,913 
                                                                                     27 MNOKOLA                       2,914 
@@ -2929,10 +2929,10 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                                     12 SUNDU                         2,926 
                                                                                     13 MWIMBI                        2,927 
                                                                                     14 MNAMBA                        2,928 
-                                                                                    15 MAMBWE MKOSWE                 2,929 
+                                                                                    15 MAMBWENKOSWE                  2,929 
                                                                                     16 MKALI                         2,930 
                                                                                     17 ULUMI                         2,931 
-                                                                                    18 MAMBWE KENYA                  2,932 
+                                                                                    18 MAMBWEKENYA                   2,932 
                                                                                     19 LEGEZA MWENDO                 2,933 
                                                                                     20 MWAZYE                        2,934 
                                                                                     21 KATAZI                        2,935 
@@ -3162,7 +3162,7 @@ SHINYANGA            MANISPAA YA SHINYANGA            SHINYANGA MJINI           
                                                                               12 MWADUI LOHUMBO                 3,159 
                                                                               13 MWAKIPOYA                      3,160 
                                                                               14 MWAMALASA                      3,161 
-                                                                              15 MWAMASEHELE                    3,162 
+                                                                              15 MWAMASHELE                     3,162 
                                                                               16 MWAWEJA                        3,163 
                                                                               17 MWATAGA                        3,164 
                                                                               18 NGOFILA                        3,165 
@@ -3263,9 +3263,9 @@ SIMIYU              MJI WA BARIADI                                BARIADI       
                                                                                20 KILALO                         3,260 
                                                                                21 MASEWA                         3,261 
                                                                                22 MATONGO                        3,262 
-                                                                               23 MWADOBANA                      3,263 
+                                                                               23 MADOBANA                       3,263 
                                                                                24 MWASUBUYA                      3,264 
-                                                                               25 MWAUBINGI                      3,265 
+                                                                               25 MWAUBINGE                      3,265 
                                                                                26 MWAUMATONDO                    3,266 
                                                                                27 NGULYATI                       3,267 
                                                                                28 NKINDWABIYE                    3,268 
@@ -3283,14 +3283,14 @@ SIMIYU              MJI WA BARIADI                                BARIADI       
                                                                                 9 MALILI                         3,280 
                                                                                10 MKULA                          3,281 
                                                                                11 MWAMANYILI                     3,282 
-                                                                               12 NGASSAMO                       3,283 
+                                                                               12 NGASAMO                        3,283 
                                                                                13 NYALUHANDE                     3,284 
                                                                                14 NYASHIMO                       3,285 
                                                                                15 SHIGALA                        3,286 
               WILAYA YA ITILIMA                                 ITILIMA         1 BUDALABUJIGA                   3,287 
                                                                                 2 BUMERA                         3,288 
                                                                                 3 CHINAMILI                      3,289 
-                                                                                4  IKINDILO                      3,290 
+                                                                                4  IKINDIRO                      3,290 
                                                                                 5 KINANG'WELI                    3,291 
                                                                                 6 LAGANGABILILI                  3,292 
                                                                                 7 LUGURU                         3,293 
@@ -3323,7 +3323,7 @@ SIMIYU              MJI WA BARIADI                                BARIADI       
                                                                                   12 MWAMASHIMBA                     3,320 
                                                                                   13 MWANG'HONOLI                    3,321 
                                                                                   14 NYABUBINZA                      3,322 
-                                                                                  15 SENG'WA                         3,323 
+                                                                                  15 SENGWA                          3,323 
                                                                                   16 SHISHIYU                        3,324 
                                                                                   17 ZANZUI                          3,325 
                                                  MASWA MASH.                        1 BINZA                          3,326 
@@ -3366,25 +3366,25 @@ SIMIYU              MJI WA BARIADI                                BARIADI       
                                                                                         6 MWAMANIMBA                     3,363 
                                                                                         7 MWAMANONGU                     3,364 
                                                                                         8 MWAMISHALI                     3,365 
-                                                                                        9 MWANGUDO                       3,366 
+                                                                                        9 MWANGUNDO                       3,366 
                                                                                        10 MWANHUZI                       3,367 
                                                                                        11 MWANJOLO                       3,368 
                                                                                        12 MBUSHI                         3,369 
                                                                                        13 MWANYAHINA                     3,370 
-                                                                                       14 NG'HOBOKO                      3,371 
+                                                                                       14 NGHOBOKO                       3,371 
                                                                                        15 KABONDOO                       3,372 
                                                                                        16 NKOMA                          3,373 
 SINGIDA              MANISPAA YA SINGIDA              SINGIDA MJINI                     1 IPEMBE                         3,374 
                                                                                         2 KINDAI                         3,375 
                                                                                         3 MAJENGO                        3,376 
                                                                                         4 MANDEWA                        3,377 
-                                                                                        5 MITUNDURUNI                    3,378 
+                                                                                        5 MITUNDURU                      3,378 
                                                                                         6 MTAMAA                         3,379 
                                                                                         7 MTIPA                          3,380 
                                                                                         8 MUGHANGA                       3,381 
-                                                                                        9 MUNGUMAJI                      3,382 
+                                                                                        9 MUNGU MAJI                     3,382 
                                                                                        10 MWANKOKO                       3,383 
-                                                                                  11 UNYAMBWA                        3,384 
+                                                                                  11 UMYAMBWA                        3,384 
                                                                                   12 UNYAMIKUMBI                     3,385 
                                                                                   13 UTEMINI                         3,386 
                                                                                   14 MINGA                           3,387 
@@ -3437,14 +3437,14 @@ SINGIDA              MANISPAA YA SINGIDA              SINGIDA MJINI             
                                                                                     6 RUNGWA                         3,434 
                                                                                     7 SANJARANDA                     3,435 
                                                                                    8 MITUNDU                         3,436 
-                                                                                   9 ITIGA-MAJENGO                   3,437 
+                                                                                   9 ITIGA MAJENGO                   3,437 
                                                                                   10 KITARAKA                        3,438 
                                                                                   11 MWAMAGEMBE                      3,439 
                                                                                   12 TAMBUKALELI                     3,440 
                                                                                   13 KALANGALI                       3,441 
                                                  MANYONI MASH.                      1 CHIKOLA                        3,442 
                                                                                    2 CHIKUYU                         3,443 
-                                                                                    3 HEKA AZIMIO                    3,444 
+                                                                                    3 HEKA                           3,444 
                                                                                    4 ISSEKE                          3,445 
                                                                                     5 KINTINKU                       3,446 
                                                                                     6 MAJIRI                         3,447 

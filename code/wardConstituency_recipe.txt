@@ -4,6 +4,31 @@ step 1: removed any titles, page numbers. column headers and other pdf formattin
 
 step 2: check for the following problems with the wards
 
+ARUSHA REGION
+
+- changed MONDULU MJINI to MONDULI MJINI
+- changed LEPULIKO to LEPURKO
+- changed USARIVER to USA RIVER
+- changed OLOIRIENI to OLOIRIEN # There are two OLOIRIEN in Arusha region
+- changed UNGA LIMITED to UNGA LTD
+- changed ENDAMAGHAN to ENDAMAGHANG
+- changed OLDEANI to OLDEAN
+- changed OLGOSOROK to ORGOSOROK
+- changed OLDONYOSAMBU to OLDONYO SAMBU
+- changed ENGUSEROSAMBU to ENGUSERO SAMBU
+- changed MAALONI to MAALON
+- changed OLTUROTO to OLTOROTO
+- changed MWANDITI to MWANDETI
+- changed MUSA to MUSSA
+- changed MATEVISI to MATEVES
+- changed OLERIEN to OLORIENI # Arusha District
+- changed KETUMBEINE to KITUMBEINE
+- changed ELANG'ATADAPASH to ELENG'ATA DAPASH
+- changed GELAI MEINGOI to GELAI MEIRUGOI
+- changed OL-MOLOG to OLMOLOG
+- changed OLOIRIEN/MAGAIDURU to OLOIRIEN # NGORONGORO district
+- changed SOKON to SOKONI I
+- changed DARAJA II to DARAJA MBILI
 KILIMANJARO ROMBO DISTRICT
 
 - changed KATANGARA/MRERE to KATANGARA MRERE
@@ -121,3 +146,44 @@ IRINGA REGION
 - changed KITANZINI/MIOMBONI to KITANZINI
 - changed BOMALANG'OMBE to BOMA LA NG'OMBE
 - changed NG'UUHE to NG'URUHE
+
+SHINYANGA REGION
+
+- changed MWAMASEHELE to MWAMASHELE
+
+SIMIYU REGION
+
+- changed MWAUBINGI to MWAUBINGE
+- changed MWADOBANA to MADOBANA
+- changed IKINDILO to IKINDIRO
+- changed NG'HOBOKO to NGHOBOKO
+- changed MWANGUDO to MWANGUNDO
+- changed SENG'WA to SENGWA
+- changed NGASSAMO to NGASAMO
+
+SINGIDA REGION
+
+- changed MITUNDURUNI to MITUNDURU
+- changed UNYAMBWA to UMYAMBWA
+- changed MUNGUMAJI to MUNGU MAJI
+- changed HEKA AZIMIO to HEKA
+- changed ITIGA-MAJENGO to ITIGA MAJENGO
+
+RUKWA REGION
+
+- changed MAMBWE KENYA to MAMBWEKENYA
+- changed MAMBWE MKOSWE to MAMBWENKOSWE
+- changed KAHENGESA to KAENGESA
+- changed MSANDA MUUGANO to MSANDA MUUNGANO
+- changed MYANGALUA to MIANGALUA
+- changed KOROGWE to KORONGWE
+
+LINDI REGION
+
+- changed NAJIRINJI to NANJIRINJI
+- changed KIRANJERANJE to KIRNJERNJE
+- changed PANDE MIKOMA to PANDE 
+- changed LIWALE 'B' to LIWALE 'B' # format of the punctuation
+- changed MNERO MIEMBENI to MINERO MIEMBENI
+- changed KILIMARONDO to KILIMA RONDO
+- changed MNERONGONGO to MINERONGONGO
