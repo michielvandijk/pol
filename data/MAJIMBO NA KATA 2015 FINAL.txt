@@ -735,7 +735,7 @@ KAGERA               MANISPAA YA BUKOBA                 BUKOBA MJINI            
                                                                                       5 IZIMBYA                           734 
                                                                                       6 KAAGYA                            735 
                                                                                       7 KAIBANJA                          736 
-                                                                                     8 KANYENGEREKO                       737 
+                                                                                     8 KANYANGEREKO                       737 
                                                                                       9 KARABAGAINE                       738 
                                                                                     10 KASHARU                            739 
                                                                                     11 KATERERO                           740 
@@ -798,7 +798,7 @@ KAGERA               MANISPAA YA BUKOBA                 BUKOBA MJINI            
                                                                                   16 KIBARE                            797 
                                                                                   17 NYAKATUNTU                        798 
                                                                                   18 BUSINDE                           799 
-                                                                                  19 MKWENDA                           800 
+                                                                                  19 NKWENDA                           800 
                                                                                   20 NYARUZUMBURA                      801 
                                                                                   21 BUGARA                            802 
                                                                                   22 KITWE                             803 
@@ -813,9 +813,9 @@ KAGERA               MANISPAA YA BUKOBA                 BUKOBA MJINI            
                                                                                     7 ISHUNJU                          812 
                                                                                    8 KAKUNYU                           813 
                                                                                    9 KANYIGO                           814 
-                                                                                  10 KASAMBYA                          815 
+                                                                                  10 KASSAMBYA                         815 
                                                                                   11 KASHENYE                          816 
-                                                                                  12 KILIMILILE                        817 
+                                                                                  12 KILIMILIL                         817 
                                                                                   13 KITOBO                            818 
                                                                                   14 KYAKA                             819 
                                                                                   15 MINZIRO                           820 
@@ -856,7 +856,7 @@ KAGERA               MANISPAA YA BUKOBA                 BUKOBA MJINI            
                                                                                    12 KIMWANI                           855 
                                                                                    13 KISHANDA                          856 
                                                                                    14 KYEBITEMBE                        857 
-                                                                                   15 MAGATA/KARUTANGA                  858 
+                                                                                   15 MAGATA (KARUTANGA)                858 
                                                                                    16 MAZINGA                           859 
                                                                                    17 MUBUNDA                           860 
                                                                                    18 MULEBA                            861 
@@ -881,10 +881,10 @@ KAGERA               MANISPAA YA BUKOBA                 BUKOBA MJINI            
                                                                                        12 NGARA MJINI                     880 
                                                                                        13 NTOBEYE                         881 
                                                                                        14 NYAKISASA                       882 
-                                                                                       15 NYAMIAGA                        883 
+                                                                                       15 NYAMIYAGA                       883 
                                                                                        16 RULENGE                         884 
                                                                                        17 RUSUMO                          885 
-                                                                                       18 MULUKULAZO                      886 
+                                                                                       18 MURUKULAZO                      886 
                                                                                        19 MBUBA                           887 
                                                                                       20 KASULO                           888 
                                                                                       21 NYAMAGOMA                        889 
@@ -956,8 +956,8 @@ KIGOMA                MANISPAA KIGOMA/UJIJI              KIGOMA MJINI           
                                                                                              7 KITONGONI                          955 
                                                                                              8 MACHINJIONI                        956 
                                                                                              9 MAJENGO                            957 
-                                                                                            10 MWANGA NORTH                       958 
-                                                                                            11 MWANGA SOUTH                       959 
+                                                                                            10 MWANGA KASKAZINI                       958 
+                                                                                            11 MWANGA KUSINI                       959 
                                                                                             12 RUBUGA                             960 
                                                                                             13 RUSIMBI                            961 
                                                                                             14 BUHANDA                            962 
@@ -987,15 +987,15 @@ KIGOMA                MANISPAA KIGOMA/UJIJI              KIGOMA MJINI           
                                                                                 19 MKATANGA                         986 
                                                                                 20 KIBWIGWA                         987 
               WILAYA YA KASULU                  KASULU                            1 BUHORO                          988 
-                                                                                 2 HERU USHINGO                     989 
-                                                                                 3 KAGERA NKANDA                    990 
+                                                                                 2 HERU SHINGO                      989 
+                                                                                 3 KAGERANKANDA                     990 
                                                                                  4 KITAGATA                         991 
                                                                                  5 KITANGA                          992 
                                                                                  6 KWAGA                            993 
                                                                                  7 MUZYE                            994 
                                                                                  8 NYAKITONTO                       995 
                                                                                  9 NYAMIDAHO                        996 
-                                                                                10 NYAMUNYUSI                       997 
+                                                                                10 NYAMNYUSI                        997 
                                                                                 11 RUNGWE MPYA                      998 
                                                                                 12 RUSESA                           999 
                                                                                 13 TITYE                          1,000 
@@ -1019,13 +1019,13 @@ KIGOMA                MANISPAA KIGOMA/UJIJI              KIGOMA MJINI           
                                                                             10 MURUBONA                      1,018 
                                                                             11 MURUSI                        1,019 
                                                                             12 MWILAVYA                      1,020 
-                                                                            13 NYANSHYA                      1,021 
+                                                                            13 NYANSHA                       1,021 
                                                                             14 ERUJUU                        1,022 
                                                                             15 KIMOBWA                       1,023 
-             WILAYA YA KAKONKO               BUYUNGU                         1 GWANUMPU                      1,024 
+             WILAYA YA KAKONKO               BUYUNGU                         1 GWAMUMPU                      1,024 
                                                                              2 KAKONKO                       1,025 
                                                                              3 KASANDA                       1,026 
-                                                                             4 KASUGA                        1,027 
+                                                                             4 KASUNGA                       1,027 
                                                                              5 MUGUNZU                       1,028 
                                                                              6 MUHANGE                       1,029 
                                                                              7 NYABIBUYE                     1,030 
@@ -1076,7 +1076,7 @@ KIGOMA                MANISPAA KIGOMA/UJIJI              KIGOMA MJINI           
                                                                                    4 KALYA                         1,075 
                                                                                    5 KANDAGA                       1,076 
                                                                                    6 MGANZA                        1,077 
-                                                                                   7 MTEGOWANOTI                   1,078 
+                                                                                   7 MTEGO WA NOTI                 1,078 
                                                                                    8 NGURUKA                       1,079 
                                                                                    9 SIGUNGA                       1,080 
                                                                                   10 MWAKIZEGA                     1,081 
@@ -1106,7 +1106,7 @@ KILIMANJARO         WILAYA YA HAI                  HAI                          
                WILAYA YA ROMBO                  ROMBO                              1 KATANGARA MRERE                1,105 
                                                                                    2 KELAMFUA MOKALA                1,106 
                                                                                    3 ALENI                          1,107 
-                                                                                   4 MENGENI                        1,108 
+                                                                                   4 KENI MENGENI                   1,108 
                                                                                    5 KIRONGO SAMANGA                1,109 
                                                                                    6 KIRWA KENI                     1,110 
                                                                                    7 KISALE MSARANGA                1,111 
@@ -1169,7 +1169,7 @@ KILIMANJARO         WILAYA YA HAI                  HAI                          
                                                                                  2 KALOLENI                       1,168 
                                                                                  3 KARANGA                        1,169 
                                                                                  4  SHIRIMATUNDA                  1,170 
-                                                                                 5 KIBORLONI                      1,171 
+                                                                                 5 KIBORILONI                     1,171 
                                                                                  6 KILIMANJARO                    1,172 
                                                                                  7 KIUSA                          1,173 
                                                                                  8 SOWETO                         1,174 
@@ -1183,7 +1183,7 @@ KILIMANJARO         WILAYA YA HAI                  HAI                          
                                                                                 16 MSARANGA                       1,182 
                                                                                 17 NJORO                          1,183 
                                                                                    18 PASUA                           1,184 
-                                                                                   19 BOMAMBUZI                       1,185 
+                                                                                   19 BOMA MBUZI                      1,185 
                                                                                    20 MFUMUNI                         1,186 
                                                                                    21 RAU                             1,187 
                WILAYA YA MOSHI                   MOSHI VIJIJINI                     1 ARUSHA CHINI                    1,188 
@@ -1227,7 +1227,7 @@ KILIMANJARO         WILAYA YA HAI                  HAI                          
                                                                                     7 KILOMENI                        1,226 
                                                                                     8 KIRONGWE                        1,227 
                                                                                          9 KIRYA                          1,228 
-                                                                                        10 KIGONIGONI                     1,229 
+                                                                                        10 KIGONINGONI                    1,229 
                                                                                         11 KWAKOA                         1,230 
                                                                                         12 TOLOHA                         1,231 
                                                                                         13 LANG'ATA                       1,232 
@@ -1248,7 +1248,7 @@ KILIMANJARO         WILAYA YA HAI                  HAI                          
                                                                                          8 BIRIRI                         1,247 
                                                                                          9 NGARENAIROBI                   1,248 
                                                                                         10 NDUMETI                        1,249 
-                                                                                        11 KASHASHI                       1,250 
+                                                                                        11 KASHISHA                       1,250 
                                                                                         12 IVAENY                         1,251 
                                                                                         13 SONGU                          1,252 
                                                                                         14 ORMERIRI                       1,253 
@@ -1425,7 +1425,7 @@ MANYARA              WILAYA YA HANANG               HANANG                      
                                                                                     15 LAGHANGA                      1,424 
                                                                                     16 MASAKTA                       1,425 
                                                                                     17 MASQARODA                     1,426 
-                                                                                    18 MEASKRON                      1,427 
+                                                                                    18 MASKRON                       1,427 
                                                                                     19 MOGITU                        1,428 
                                                                                    20 NANGWA                         1,429 
                                                                                    21 SIMBAY                         1,430 
@@ -1464,7 +1464,7 @@ MANYARA              WILAYA YA HANANG               HANANG                      
                                                                             21 LEIZARI                       1,463 
                                                                             22 KALOLENI                      1,464 
                                                                             23 BWAWANI                       1,465 
-              WILAYA YA MBULU                MBULU VIJIJINI                  1 YAENDA AMPA                   1,466 
+              WILAYA YA MBULU                MBULU VIJIJINI                  1 YAEDA AMPA                    1,466 
                                                                              2 BASHAY                        1,467 
                                                                              3 TUMATI                        1,468 
                                                                              4 DONGOBESH                     1,469 
@@ -1475,8 +1475,8 @@ MANYARA              WILAYA YA HANANG               HANANG                      
                                                                              9 MARETADU                      1,474 
                                                                             10 HAYDOM                        1,475 
                                                                             11 GETERER                       1,476 
-                                                                            12 HAYDARER                      1,477 
-                                                                            13 ENDAMILAI                     1,478 
+                                                                            12 HAYDERER                      1,477 
+                                                                            13 ENDAMILAY                     1,478 
                                                                             14 YAEDA CHINI                   1,479 
                                                                             15 ASHKESH                       1,480 
                                                                             16 MASIEDA                       1,481 
@@ -1503,20 +1503,20 @@ MANYARA              WILAYA YA HANANG               HANANG                      
                                                                                 2 KITWAI                        1,502 
                                                                                 3 KOMOLO                        1,503 
                                                                                 4 LOIBORSIRET                   1,504 
-                                                                                5 LOIBORSOIT                    1,505 
+                                                                                5 LIBORSOIT                     1,505 
                                                                                 6 MERERANI                      1,506 
                                                                                 7 MSITU WA TEMBO                1,507 
                                                                                 8 NABERERA                      1,508 
                                                                                 9 NAISINYAI                     1,509 
                                                                                10 NGORIKA                       1,510 
                                                                                11 OLJORO  NO. 5                 1,511 
-                                                                               12 ORKESUMET                     1,512 
-                                                                               13 RUVU REMIT                    1,513 
+                                                                               12 ORKESMET                      1,512 
+                                                                               13 RUVU REMITI                   1,513 
                                                                                14 SHAMBARAI                     1,514 
                                                                                15 TERRAT                        1,515 
-                                                                               16 Endiamtu                      1,516 
+                                                                               16 Endiantu                      1,516 
                                                                                17 Langai                        1,517 
-                                                                               18 ENDONYOENGIJAPE               1,518 
+                                                                               18 ENDONYONGIJAPE                1,518 
                MJI BABATI                      BABATI  MJINI                    1 BABATI                        1,519 
                                                                                 2 BAGARA                        1,520 
                                                                                 3 BONGA                         1,521 
@@ -1580,7 +1580,7 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
                                                                                        12 MCHARO                         1,579 
                                                                               13 WARIKU                        1,580 
                                                                               14 NYATWALI                      1,581 
-              WILAYA YA BUNDA                 BUNDA                            1 UNYARI                        1,582 
+              WILAYA YA BUNDA                 BUNDA                            1 HUNYARI                       1,582 
                                                                                2 MIHINGO                       1,583 
                                                                                3 MUGETA                        1,584 
                                                                                4 NYAMUSWA                      1,585 
@@ -1600,7 +1600,7 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
                                                                               11 BUTIMBA                       1,599 
                                                                               12 NYAMIHORO                     1,600 
               WILAYA YA MUSOMA                MUSOMA VIJIJINI                  1 MUGANGO                       1,601 
-                                                                               2 NYAMLANDIRILA                 1,602 
+                                                                               2 NYAMRANDIRIRA                 1,602 
                                                                                3 NYAMBONO                      1,603 
                                                                                4 BUGOJI                        1,604 
                                                                                5 BWASI                         1,605 
@@ -1623,7 +1623,7 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
               WILAYA YA BUTIAMA               BUTIAMA                          1 BUTIAMA                       1,622 
                                                                                2 BUHEMBA                       1,623 
                                                                                3 NYANKANGA                     1,624 
-                                                                               4 MURIANZA                      1,625 
+                                                                               4 MURIAZA                       1,625 
                                                                                5 KYANYARI                      1,626 
                                                                                6 MASABA                        1,627 
                                                                                7 BUTUGURI                      1,628 
@@ -1636,7 +1636,7 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
                                                                               14 NYAMIMANGE                    1,635 
                                                                               15 BWIREGI                       1,636 
                                                                               16 BUSWAHILI                     1,637 
-                                                                              17 SIROLI SIMBA                  1,638 
+                                                                              17 SIRORISIMBA                   1,638 
                                                                               18 MIRWA                         1,639 
               WILAYA YA RORYA                 RORYA                            1 BUKURA                        1,640 
                                                                                2 BUKWE                         1,641 
@@ -1687,7 +1687,7 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
                                                                                21 MATARE                         1,686 
                                                                                22 STENDI KUU                     1,687 
                                                                                23 MOROTONGA                      1,688 
-                                                                               24 SEDEKO                         1,689 
+                                                                               24 SEDECO                         1,689 
                                                                                25 MBALIBALI                      1,690 
                                                                                26 MAJIMOTO                       1,691 
                                                                                27 MAGANGE                        1,692 
@@ -1696,7 +1696,7 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
                                                                                30 NAGUSI                         1,695 
                                                                                31 MUGUTENI                       1,696 
               WILAYA YA TARIME                 TARIME VIJIJINI                   1 SUSUNI                        1,697 
-                                                                                 2 SIRALI                        1,698 
+                                                                                 2 SIRARI                        1,698 
                                                                                  3 REGICHELI                     1,699 
                                                                                  4 GWITIRYO                      1,700 
                                                                                  5 PEMBA                         1,701 
@@ -1710,17 +1710,17 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
                                                                                 13 KEMAMBO                       1,709 
                                                                                 14 MATONGO                       1,710 
                                                                                 15 NYAMWAGA                      1,711 
-                                                                                           16 NYARUKOBA                        1,712 
+                                                                                           16 NYAROKOBA                        1,712 
                                                                                            17 KWIHANCHA                        1,713 
                                                                                            18 MURIBA                           1,714 
-                                                                                           19 NYASINCHA                        1,715 
+                                                                                           19 NYANSICHA                         1,715 
                                                                                            20 NYANUNGU                         1,716 
                                                                                            21 ITIRYO                           1,717 
                                                                                            22 NYARERO                          1,718 
                                                                                            23 KIBASUKA                         1,719 
                                                                                            24 BINAGI                           1,720 
                                                                                            25 NYAKONGA                         1,721 
-                                                                                           26 GANYANGE                         1,722 
+                                                                                           26 GENYANGE                         1,722 
                       MJI TARIME                         TARIME MJINI                        1 BOMANI                          1,723 
                                                                                             2 NYAMISANGURA                     1,724 
                                                                                             3 SABASABA                         1,725 
@@ -3080,8 +3080,8 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
                                                                                         6 NGAPA                          3,077 
                                                                                         7 MINDU                          3,078 
                                                                                         8 MUHUWESI                       3,079 
-                                                                                        9 MLINGOTI MASHARIKI             3,080 
-                                                                                       10 MLINGOTI MAGHARIBI             3,081 
+                                                                                        9 MLINGOTI MASHARIKI            3,080 
+                                                                                       10 MLINGOTI MAGHARIBI            3,081 
                                                                                        11 NAMPUNGU                       3,082 
                                                                                        12 KIDODOMA                       3,083 
                                                                                        13 NANDEMBO                       3,084 
@@ -3719,7 +3719,7 @@ TANGA               MJI KOROGWE                       KOROGWE MJINI             
                                                                                         3 KWAMNDOLWA                     3,716 
                                                                                         4 MAGUNGA                        3,717 
                                                                                         5 MANUNDU                        3,718 
-                                                                                        6 MGOMBEZI                       3,719 
+                                                                                        6 NGOMBEZI                       3,719 
                                                                                         7 MTONGA                         3,720 
                                                                                         8 OLD KOROGWE                    3,721 
                                                                                         9 BAGAMOYO                       3,722 
@@ -3737,7 +3737,7 @@ TANGA               MJI KOROGWE                       KOROGWE MJINI             
                                                                                       10 MSANJA                          3,734 
                                                                                       11 MVUNGWE                         3,735 
                                                                             12 NEGERO                       3,736 
-                                                                            13 PWAGWI                       3,737 
+                                                                            13 PAGWI                        3,737 
                                                                             14 SAUNYI                       3,738 
                                                                             15 SONGE                        3,739 
                                                                             16 TUNGULI                      3,740 
@@ -3763,9 +3763,8 @@ TANGA               MJI KOROGWE                       KOROGWE MJINI             
                                                                             15 MOMBO                        3,760 
                                                                             16 VUGIRI                       3,761 
                                                                             17 MPALE                        3,762 
-                                                                            18 MSWAHA                       3,763 
-                                                                               MAGAMBA KWA  
-                                                                            19 LUKONGE                      3,764 
+                                                                            18 MSWAHA                       3,763                                                                                  
+                                                                            19 MAGAMBA KWALUKONGE           3,764 
                                                                            20  KWASHEMSHI                   3,765 
                                                                            21 MGWASHI                       3,766 
                                                                            22 MLUNGUI                       3,767 
@@ -3825,7 +3824,7 @@ TANGA               MJI KOROGWE                       KOROGWE MJINI             
                                                                              25 MPAPAYU                        3,821 
                                                                              26 GENGE                          3,822 
                                                                              27 KWEMKABALA                     3,823 
-                                                                            28 TANGANYIKA-MTAA               3,824 
+                                                                            28 TANGANYIKA                    3,824 
                                                                             29 MBOMOLE                       3,825 
                                                                             30 TONGWE                        3,826 
                                                                             31 MLINGANO                      3,827 
@@ -3870,19 +3869,18 @@ TANGA               MJI KOROGWE                       KOROGWE MJINI             
                                                                              6 VIBAONI                       3,866 
                                                                              7 CHANIKA                       3,867 
                                                                                 8 MDOE                           3,868 
-                                                                                9 KWEMJUGO                       3,869 
-                                                                               10 KWEDIAMBA                      3,870 
+                                                                                9 KWENJUGO                       3,869 
+                                                                               10 KWEDIYAMBA                     3,870 
                                                                                11 MALEZI                         3,871 
                                                                                12 MABANDA                        3,872 
               WILAYA YA  HANDENI               HANDENI VIJIJINI                 1 KABUKU                         3,873 
                                                                                 2 KANG'ATA                       3,874 
                                                                                 3 KIVA                           3,875 
-                                                                                4 KOMKONGA                       3,876 
-                                                                                  KWALUGURU  
-                                                                                5 (MAGAMBA)                      3,877 
+                                                                                4 KOMKONGA                       3,876                                                                                     
+                                                                                5 KWALUGURU                      3,877 
                                                                                 6 KWAMATUKU                      3,878 
                                                                                 7 KWAMSISI                       3,879 
-                                                                                8 KWANKONJE                      3,880 
+                                                                                8 KWAMKONJE                      3,880 
                                                                                 9 KWASUNGA                       3,881 
                                                                                10 KWEDIZINGA                     3,882 
                                                                                11 MAZINGARA                      3,883 
@@ -3893,7 +3891,7 @@ TANGA               MJI KOROGWE                       KOROGWE MJINI             
                                                                                16 SEGERA                         3,888 
                                                                                17 SINDENI                        3,889 
                                                                                18 KABUKU NDANI                   3,890 
-                                                                               19 KWA CHAGA                      3,891 
+                                                                               19 KWACHAGA                       3,891 
                                                                                20 KWAMGWE                        3,892 
               WILAYA YA  LUSHOTO               LUSHOTO                          1 GARE                           3,893 
                                                                                 2 KWAI                           3,894 
@@ -3951,7 +3949,7 @@ TANGA               MJI KOROGWE                       KOROGWE MJINI             
                                                                                3 KIMANG'A                      3,946 
                                                                                4 KIPUMBWI                      3,947 
                                                                                5 MADANGA                       3,948 
-                                                                               6 MIKINGUNI                     3,949 
+                                                                               6 MIKUNGUNI                     3,949 
                                                                                7 MKALAMO                       3,950 
                                                                                8 MKWAJA                        3,951 
                                                                                9 MWERA                         3,952 
