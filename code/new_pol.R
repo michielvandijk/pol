@@ -11,7 +11,7 @@ library(rgdal)
 ogrListLayers("TZwards.shp")
 TZA <- readOGR("TZwards.shp", layer="TZwards")
 wards <- toupper(TZA@data$Ward_Name)
-"GIDHIMU" %in% wards
+"M,AGOWEKO" %in% wards
 
 
 # -------------------------------------
