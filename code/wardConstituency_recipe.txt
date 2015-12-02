@@ -2,7 +2,76 @@
 
 step 1: removed any titles, page numbers. column headers and other pdf formatting
 
-step 2: check for the following problems with the wards
+STEP 2: match up constituency names across data sources
+
+- changed MUFINDI KASK. to MUFINDI KASKAZINI
+
+DODOMA REGION
+
+
+IRINGA REGION
+
+- changed ISIMANI to ISMANI 
+- changed MUFINDI KUS. to MUFINDI KUSINI
+
+KAGERA REGION
+
+- changed MULEBA KASK. to MULEBA KASKAZINI
+
+KIGOMA REGION
+
+- changed KIGOMA(KIGOMA KASKAZINI) to KIGOMA KASKAZINI
+- changed UVINZA(KIGOMA KUSINI) to KIGOMA KUSINI
+
+MARA REGION
+
+- look at map for Tarime and Tarime Mjini. Quite clear that Tarime Mjini was in tarime.
+- changed TARIME VIJIJINI and TARIME MJINI to TARIME
+
+MBEYA
+
+- changed 1. ILEJE to ILEJE
+- changed 1. KYELA to KYELA
+- changed 1. MBARALI to MBARALI 
+- changed 1. MBEYA VIJIJINI to MBEYA VIJIJINI
+
+MOROGORO REGION
+
+- changed MOROGORO KUS. to MOROGORO KUSINI
+- changed MOROGORO K/MASHARIKI to MOROGORO KUSINI MASHARIKI
+
+MTWARA REGION
+
+Look at map for Newala - clear that the NEWALA MJINI and NEWALA VIJIJINI are both
+Newala constituency
+
+- changed NEWALA VIJIJINI and NEWALA MJINI to NEWALA
+
+RUKWA REGION
+
+- changed 2. NKASI KASKAZINI to NKASI KASKAZINI
+- changed 1. NKASI KUSINI to NKASI KUSINI
+
+RUVUMA REGION
+
+- changed TUNDURU KASK. to TUNDURU KASKAZINI
+- changed TUNDURU KUS. to TUNDURU KUSINI
+
+SHINANGA REGION
+
+- changed MASWA MAGH. to MASWA MAGHARIBI
+- changed MASWA MASH. to MASWA MASHARAKI
+
+SINGIDA REGION
+
+- changed MANYONI MAGH. to MANYONI MAGHARIBI
+- changed MANYONI MASH. to MANYONI MASHARIKI
+- changed IKUNGI(SINGIDA MASHARIKI) to SINGIDA MASHARIKI
+
+TABORA REGION
+
+- changed TABORA KASK. to TABORA KASKAZINI
+step 3: check for the following problems with the wards
 
 ARUSHA REGION
 

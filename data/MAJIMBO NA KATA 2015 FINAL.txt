@@ -609,7 +609,7 @@ IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI          
                                                                                             16 ISAKALILO                          608 
                                                                                             17 MKIMBIZI                           609 
                                                                                             18 IGUMBILO                           610 
-                      WILAYA YA  IRINGA                   ISIMANI                            1  IDODI                             611 
+                      WILAYA YA  IRINGA                   ISMANI                            1  IDODI                             611 
                                                                                      2 ILOLO MPYA                        612 
                                                                                      3 ITUNUNDU                          613 
                                                                                      4 IZAZI                             614 
@@ -661,7 +661,7 @@ IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI          
                                                                                           22 NG'URUHE                           660 
                                                                                           23 KISINGH'A                         661 
                                                                                           24 NYANZWA                           662 
-                     6.  WILAYA YA MUFINDI              1. MUFINDI KASK.                   1 IKWEHA                            663 
+                     6.  WILAYA YA MUFINDI              1. MUFINDI KASKAZINI                   1 IKWEHA                            663 
                                                                                            2 SADANI                            664 
                                                                                            3 IGOMBAVANU                        665 
                                                                                            4 KIBENGU                           666 
@@ -672,7 +672,7 @@ IRINGA                MANISPAA YA IRINGA                  IRINGA MJINI          
                                                                                            9 IKONGOSI                          671 
                                                                                           10 MDABULO                           672 
                                                                                           11 IHANU                             673 
-                                                        MUFINDI KUS.                       1 MNINGA                            674 
+                                                        MUFINDI KUSINI                       1 MNINGA                            674 
                                                                                            2 KASANGA                           675 
                                                                                            3 MAKUNGU                           676 
                                                                                            4 KIYOWELA                          677 
@@ -824,7 +824,7 @@ KAGERA               MANISPAA YA BUKOBA                 BUKOBA MJINI            
                                                                                   18 MABALE                            823 
                                                                                   19 MUSHASHA                          824 
                                                                                   20 MUTUKULA                          825 
-              WILAYA YA MULEBA                   MULEBA KASK.                       1 BULYAKASHAJU                     826 
+              WILAYA YA MULEBA                   MULEBA KASKAZINI                  1 BULYAKASHAJU                     826 
                                                                                    2 BUMBIRE                           827 
                                                                                     3 GOZIBA                           828 
                                                                                    4 IBUGA                             829 
@@ -1054,7 +1054,7 @@ KIGOMA                MANISPAA KIGOMA/UJIJI              KIGOMA MJINI           
                                                                                   17 NYARUYOBA                     1,053 
                                                                                   18 BITURANA                      1,054 
                                                                                   19 KUMWAMBU                      1,055 
-                   WILAYA YA KIGOMA           KIGOMA(KIGOMA KASKAZINI)             1 BITALE                        1,056 
+                   WILAYA YA KIGOMA                 KIGOMA KASKAZINI              1 BITALE                        1,056 
                                                                                    2 KAGONGO                       1,057 
                                                                                    3 KAGUNGA                       1,058 
                                                                                    4 KALINZI                       1,059 
@@ -1070,7 +1070,7 @@ KIGOMA                MANISPAA KIGOMA/UJIJI              KIGOMA MJINI           
                                                                                   14 NYARUBANDA                    1,069 
                                                                                   15 ZIWANI                        1,070 
                                                                                   16 SIMBO                         1,071 
-                   WILAYA YA UVINZA                UVINZA(KIGOMA KUSINI)           1 BUHINGU                       1,072 
+                   WILAYA YA UVINZA                 KIGOMA KUSINI                 1 BUHINGU                       1,072 
                                                                                    2 IGALULA                       1,073 
                                                                                    3 ILAGALA                       1,074 
                                                                                    4 KALYA                         1,075 
@@ -1695,7 +1695,7 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
                                                                                29 MOSONGO                        1,694 
                                                                                30 NAGUSI                         1,695 
                                                                                31 MUGUTENI                       1,696 
-              WILAYA YA TARIME                 TARIME VIJIJINI                   1 SUSUNI                        1,697 
+              WILAYA YA TARIME                 TARIME                          1 SUSUNI                        1,697 
                                                                                  2 SIRARI                        1,698 
                                                                                  3 REGICHELI                     1,699 
                                                                                  4 GWITIRYO                      1,700 
@@ -1721,7 +1721,7 @@ MARA                 MANISPAA YA MUSOMA               MUSOMA MJINI              
                                                                                            24 BINAGI                           1,720 
                                                                                            25 NYAKONGA                         1,721 
                                                                                            26 GENYANGE                         1,722 
-                      MJI TARIME                         TARIME MJINI                        1 BOMANI                          1,723 
+                      MJI TARIME                         TARIME                            1 BOMANI                          1,723 
                                                                                             2 NYAMISANGURA                     1,724 
                                                                                             3 SABASABA                         1,725 
                                                                                             4 TURWA                            1,726 
@@ -1803,7 +1803,7 @@ MBEYA                 MBEYA JIJI                         MBEYA MJINI            
                                                                                16 CHANG'OMBE                    1,802 
                                                                                17 MPONA                         1,803 
                                                                                18 UDINDE                        1,804 
-              WILAYA YA ILEJE                  1. ILEJE                         1 BUPIGU                        1,805 
+              WILAYA YA ILEJE                  ILEJE                           1 BUPIGU                        1,805 
                                                                                 2 CHITETE                       1,806 
                                                                                 3 IBABA                         1,807 
                                                                                 4 IKINGA                        1,808 
@@ -1821,7 +1821,7 @@ MBEYA                 MBEYA JIJI                         MBEYA MJINI            
                                                                                16 SANGE                         1,820 
                                                                                17 MLALE                         1,821 
                                                                                18 KALEMBO                       1,822 
-               WILAYA YA KYELA                 1. KYELA                         1 BUJONDE                       1,823 
+               WILAYA YA KYELA                 KYELA                           1 BUJONDE                       1,823 
                                                                                 2 BUSALE                        1,824 
                                                                                 3 IKAMA                         1,825 
                                                                                 4 IKOLO                         1,826 
@@ -1854,7 +1854,7 @@ MBEYA                 MBEYA JIJI                         MBEYA MJINI            
                                                                                    31 BONDENI                         1,853 
                                                                                    32 IBANDA                          1,854 
                                                                                    33 NJIJI                           1,855 
-               5.WILAYA YA MBARALI                1. MBARALI                        1 CHIMALA                         1,856 
+               5.WILAYA YA MBARALI                MBARALI                           1 CHIMALA                         1,856 
                                                                                     2 IGURUSI                         1,857 
                                                                                     3 MADIBIRA                        1,858 
                                                                                     4 MAPOGORO                        1,859 
@@ -1874,7 +1874,7 @@ MBEYA                 MBEYA JIJI                         MBEYA MJINI            
                                                                                    18 LUGELELE                        1,873 
                                                                                    19 LUHANGA                         1,874 
                                                                                    20 IMALILOSONGWE                   1,875 
-               6. WILAYA YA MBEYA                 1. MBEYA VIJIJINI                 1 ILUNGU                          1,876 
+               6. WILAYA YA MBEYA                 MBEYA VIJIJINI                    1 ILUNGU                          1,876 
                                                                                     2 ULENJE                          1,877 
                                                                                     3 INYALA                          1,878 
                                                                                     4 TEMBELA                         1,879 
@@ -2126,7 +2126,7 @@ MOROGORO            MANISPAA YA MOROGORO             MOROGORO MJINI             
                                                                              15  MUHENDA                        2,124 
                                                                              16  MVUMI                          2,125 
                                                                              17  PARAKUYO                       2,126 
-              WILAYA YA MOROGORO               MOROGORO KUS.                 1   BUNGU                          2,127 
+              WILAYA YA MOROGORO               MOROGORO KUSINI               1   BUNGU                          2,127 
                                                                              2   BWAKI LA CHINI                 2,128 
                                                                              3   BWAKILA JUU                    2,129 
                                                                              4   KASANGA                        2,130 
@@ -2142,8 +2142,8 @@ MOROGORO            MANISPAA YA MOROGORO             MOROGORO MJINI             
                                                                              14  MVUHA                          2,140 
                                                                              15   SELEMBALA                     2,141 
                                                                              16   SINGISA                       2,142 
-                                               MOROGORO                      17  TAWA                           2,143 
-                                               K/MASHARIKI                   1    GWATA                         2,144 
+                                                                             17  TAWA                           2,143 
+                                      MOROGORO KUSINI MASHARIKI              1    GWATA                         2,144 
                                                                              2   KIDUGALO                       2,145 
                                                                              3   KINOLE                         2,146 
                                                                              4   KIROKA                         2,147 
@@ -2340,7 +2340,7 @@ MTWARA               MIKINDANI                         MTWARA MJINI             
                                                                              15  NAKOPI                         2,337 
                                                                              16  KAMUNDI                        2,338 
                                                                              17  KILIMANIHEWA                   2,339 
-               MJI WA NEWALA                   NEWALA MJINI                  1   LUCHINGU                       2,340 
+               MJI WA NEWALA                   NEWALA                        1   LUCHINGU                       2,340 
                                                                              2   NANGWALA                       2,341 
                                                                              3   TULINDANE                      2,342 
                                                                              4   MTONYA                         2,343 
@@ -2356,7 +2356,7 @@ MTWARA               MIKINDANI                         MTWARA MJINI             
                                                                              14  MATUMACHI                      2,353 
                                                                              15  MCHOLI II                      2,354 
                                                                              16  NANGURUWE                      2,355 
-              WILAYA YA  NEWALA                NEWALA VIJIJINI               1   MTOPWA                         2,356 
+              WILAYA YA  NEWALA                NEWALA                        1   MTOPWA                         2,356 
                                                                              2   MCHEMO                         2,357 
                                                                              3   MDIMBA MPELEMPELE              2,358 
                                                                              4    CHIWONGA                      2,359 
@@ -2860,7 +2860,7 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                                     17 MSUA                            2,857 
                                                                                     18 MOMOKA                          2,858 
                                                                                     19 LWICHE                          2,859 
-               WILAYA YA NKASI                    1. NKASI KUSINI                    1 CHALA                           2,860 
+               WILAYA YA NKASI                       NKASI KUSINI                    1 CHALA                           2,860 
                                                                                      2 ISALE                           2,861 
                                                                                      3 KALA                            2,862 
                                                                                      4 KATE                            2,863 
@@ -2871,7 +2871,7 @@ PWANI               MJI WA KIBAHA                     KIBAHA MJINI              
                                                                                      9 NKANDASI                        2,868 
                                                                                     10 KIZUMBI                         2,869 
                                                                                     11 MYULA                           2,870 
-                                                  2. NKASI KASKAZINI                 1 KABWE                           2,871 
+                                                    NKASI KASKAZINI                 1 KABWE                           2,871 
                                                                                      2 KIRANDO                         2,872 
                                                                                      3 MKWAMBA                         2,873 
                                                                                      4 MTENGA                          2,874 
@@ -3072,7 +3072,7 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
                                                                               19 SUBIRA                         3,069 
                                                                               20 TANGA                          3,070 
                                                                               21  LILAMBO                       3,071 
-              WILAYA YA TUNDURU               TUNDURU KASK.                     1 MATEMANGA                     3,072 
+              WILAYA YA TUNDURU             TUNDURU KASKAZINI                  1 MATEMANGA                     3,072 
                                                                                2 KALULU                         3,073 
                                                                                3 NAMWINYU                       3,074 
                                                                                4 LIGUNGA                        3,075 
@@ -3096,7 +3096,7 @@ RUVUMA               MJI WA MBINGA                  MBINGA MJINI                
                                                                                        22 MAJIMAJI                       3,093 
                                                                                        23 NAMAKAMBALE                    3,094 
                                                                                        24 NTINGINYA                      3,095 
-                                                      TUNDURU KUS.                      1 MTINA                          3,096 
+                                                      TUNDURU KUSINI                    1 MTINA                          3,096 
                                                                                         2 MCHESI                         3,097 
                                                                                         3 LUKUMBULE                      3,098 
                                                                                         4 MBESA                          3,099 
@@ -3309,7 +3309,7 @@ SIMIYU              MJI WA BARIADI                                BARIADI       
                                                                                   20  SAGATA                         3,306 
                                                                                   21  SAWIDA                         3,307 
                                                                                   22  ZAGAYU                         3,308 
-              WILAYA YA MASWA                    MASWA MAGH.                        1 BADI                           3,309 
+              WILAYA YA MASWA                    MASWA MAGHARIBI                   1 BADI                           3,309 
                                                                                    2 BUCHAMBI                        3,310 
                                                                                    3 BUSANGI                         3,311 
                                                                                    4  ISANGA                         3,312 
@@ -3326,7 +3326,7 @@ SIMIYU              MJI WA BARIADI                                BARIADI       
                                                                                   15 SENGWA                          3,323 
                                                                                   16 SHISHIYU                        3,324 
                                                                                   17 ZANZUI                          3,325 
-                                                 MASWA MASH.                        1 BINZA                          3,326 
+                                                 MASWA MASHARAKI                   1 BINZA                          3,326 
                                                                                    2 BUDEKWA                         3,327 
                                                                                    3 BUGARAMA                        3,328 
                                                                                    4  BUSILILI                       3,329 
@@ -3429,7 +3429,7 @@ SINGIDA              MANISPAA YA SINGIDA              SINGIDA MJINI             
                                                                                   15 TUMULI                          3,426 
                                                                                   16 NKALAKALA                       3,427 
                                                                                   17 KINAMPUNDU                      3,428 
-              WILAYA YA MANYONI                  MANYONI MAGH.                      1 AGHONDI                        3,429 
+              WILAYA YA MANYONI                  MANYONI MAGHARIBI                 1 AGHONDI                        3,429 
                                                                                    2 IDODYANDOLE                     3,430 
                                                                                     3 IPANDE                         3,431 
                                                                                    4 ITIGI                           3,432 
@@ -3442,7 +3442,7 @@ SINGIDA              MANISPAA YA SINGIDA              SINGIDA MJINI             
                                                                                   11 MWAMAGEMBE                      3,439 
                                                                                   12 TAMBUKALELI                     3,440 
                                                                                   13 KALANGALI                       3,441 
-                                                 MANYONI MASH.                      1 CHIKOLA                        3,442 
+                                                 MANYONI MASHARIKI                 1 CHIKOLA                        3,442 
                                                                                    2 CHIKUYU                         3,443 
                                                                                     3 HEKA                           3,444 
                                                                                    4 ISSEKE                          3,445 
@@ -3481,8 +3481,8 @@ SINGIDA              MANISPAA YA SINGIDA              SINGIDA MJINI             
                                                                                        18 KINYAGIGI                      3,478 
                                                                                        19 KIJOTA                         3,479 
                                                                                        20 MUGHUNGA                       3,480 
-                                                      IKUNGI(SINGIDA                   21 ITAJA                          3,481 
-                     WILAYA YA IKUNGI                 MASHARIKI)                         1 ISSUNA                        3,482 
+                                                                                       21 ITAJA                          3,481 
+                     WILAYA YA IKUNGI                 SINGIDA MASHARIKI                 1 ISSUNA                        3,482 
                                                                                         2 MANG'ONYI                      3,483 
                                                                                         3 DUNG'UNYI                      3,484 
                                                                                         4 IKUNGI                         3,485 
@@ -3651,7 +3651,7 @@ TABORA               MANISPAA YA TABORA               TABORA MJINI              
                                                                                      9 MIYENZE                         3,648 
                                                                                     10 MISWAKI                         3,649 
                                                                                     11 MMALE                           3,650 
-                                                  TABORA KASK.                       1 BUKUMBI                         3,651 
+                                                  TABORA KASKAZINI                   1 BUKUMBI                         3,651 
                                                                                      2 IBIRI                           3,652 
                                                                                      3 IKONGOLO                        3,653 
                                                                                        NZUBUKA                         3,654 
