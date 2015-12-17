@@ -67,3 +67,5 @@ df$N2 <- gsub(",", "", df$N2)
 df$N2 <- as.integer(df$N2)
 
 rm(list=ls()[!ls() %in% "df"])
+
+write.table(df, "C:/Users/Tomas/Documents/LEI/pol/data/conLink.txt", row.names=FALSE)

@@ -2,6 +2,10 @@
 
 step 1: removed any titles, page numbers. column headers and other pdf formatting
 
+STEP 2 region names
+
+- changed DAR ES SALAAM  to DAR-ES-SALAAM 
+
 STEP 2: match up constituency names across data sources
 
 - changed MUFINDI KASK. to MUFINDI KASKAZINI
@@ -68,6 +72,15 @@ SINGIDA REGION
 - changed MANYONI MASH. to MANYONI MASHARIKI
 - changed IKUNGI(SINGIDA MASHARIKI) to SINGIDA MASHARIKI
 
+Iramba Magharibi and Iramba Mashariki belong to wilaya ya iramba 
+and wilaya ys mkalama respectivley. See2015 election results file
+
+This suggests that the Iramba constiuency and and MKALAMA
+constituency are actually iramba magharibi and iramba mashariki
+
+- changed IRAMBA to IRAMBA MAGHARIBI
+- changed MKALAMA to IRAMBA MASHARIKI
+
 TABORA REGION
 
 - changed TABORA KASK. to TABORA KASKAZINI
@@ -113,6 +126,7 @@ KILIMANJARO ROMBO DISTRICT
 - changed USHIRI/ IKUINI to USHIRI IKUINI
 - changed KINGACHI to KITIRIMA KINGACHI
 - changed SHIMBIKWANDELE to SHIMBI
+- changed MWIKA KASKAZINI to MWIKAKASKAZINI
 
 KILIMANJARO 
 
@@ -291,6 +305,8 @@ RUVUMA REGION
 - changed MLINGOTINI MASHARIKI to MLINGOTI MASHARIKI
 - changed MLINGOTINI MAGHARIBI to MLINGOTI MAGHARIBI
 - changed SISI KWA SISI to SISIKWASISI
+- changed MUHUKUKU to MUHURUKU
+- changed MATIMILA to MATIMIRA
 
 KAGERA REGION
 
@@ -359,6 +375,7 @@ MTWARA REGION
 - changed MNDUMBWE to MDUMBWE
 - changed RAILWAYS to RAILWAY
 - changed NATUMBUKA to NAMTUMBUKA*
+- changed LUCHINGU to LUCHINDU*
 
 TABORA REGION
 
@@ -372,6 +389,7 @@ TABORA REGION
 - changed KILOLELI to KALOLELI
 - changed NGONYWA to NGOYWA
 - changed UKUMBISIGANGA to UKUMBI SIGANGA
+- changed NG'AMBO to NG`AMBO
 
 MBEYA REGION
 

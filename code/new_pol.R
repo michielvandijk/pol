@@ -92,30 +92,6 @@ missing[missing$Region_Nam %in% "Tabora",]
 missing[missing$Region_Nam %in% "Arusha",]
 
 # -------------------------------------
-# compare with NEC constituency, ward 
-# maps to complete the constituency ward 
-# table
-plot(TZA[TZA@data$Region_Nam %in% "Arusha",])
-plot(TZA[TZA@data$Region_Nam %in% "Dodoma",])
-plot(TZA[TZA@data$Region_Nam %in% "Kilimanjaro",])
-plot(TZA[TZA@data$Region_Nam %in% "Tanga",])
-plot(TZA[TZA@data$Region_Nam %in% "Morogoro",])
-plot(TZA[TZA@data$Region_Nam %in% "Lindi",])
-plot(TZA[TZA@data$Region_Nam %in% "Ruvuma",])
-plot(TZA[TZA@data$Region_Nam %in% "Kagera",])
-plot(TZA[TZA@data$Region_Nam %in% "Kigoma",])
-plot(TZA[TZA@data$Region_Nam %in% "Manyara",])
-plot(TZA[TZA@data$Region_Nam %in% "Mara",])
-plot(TZA[TZA@data$Region_Nam %in% "Mbeya",])
-plot(TZA[TZA@data$Region_Nam %in% "Mtwara",])
-plot(TZA[TZA@data$Region_Nam %in% "Mwanza",])
-plot(TZA[TZA@data$Region_Nam %in% "Njombe",])
-plot(TZA[TZA@data$Region_Nam %in% "Rukwa",])
-plot(TZA[TZA@data$Region_Nam %in% "Shinyanga",])
-plot(TZA[TZA@data$Region_Nam %in% "Singida",])
-plot(TZA[TZA@data$Region_Nam %in% "Tabora",])
-
-# -------------------------------------
 # plots for finding missing wards
 
 sengerema <- TZA[TZA@data$District_N %in% "Sengerema",]
@@ -127,8 +103,6 @@ plot(sengerema, col=col)
 # -------------------------------------
 # matching constituency names
 # read in the constituency data for 2010
-
-# clearl a problem with the constituency data, wards where constituencies should be
 
 leg10 <- read.table("C:/Users/Tomas/Documents/LEI/pol/data/leg10.txt", header=TRUE)
 tst <- unique(select(leg10, region, const))
@@ -142,4 +116,9 @@ tst <- tst[!tst$region %in% islands, ]
 missing <- !toupper(tst$const) %in% toupper(df$con)
 sum(missing) # 35
 tst[missing, ]
+
+# -------------------------------------
+# join the data together into a map of 
+# constituencies
+
 
