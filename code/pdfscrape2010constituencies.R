@@ -72,4 +72,10 @@ conLink2010$female <- as.integer(conLink2010$female)
 
 rm(list=ls()[!ls() %in% "conLink2010"])
 
+# -------------------------------------
+# the name for Dar-Es-Salaam is not 
+# coming through properly
+
+conLink2010$reg <- gsub("Dâ???TSalaam", "Dar-Es-Salaam", conLink2010$reg)
+
 save(conLink2010, file=paste(getwd(), "conLink2010.RData", sep="/"))
