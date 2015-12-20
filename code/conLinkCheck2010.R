@@ -1,39 +1,35 @@
 # -------------------------------------
-# check for wards and constituencies that
-# do not match-up with the 2010 constituency
-# ward link and the constituency election data
+# match up all the wards that are in the
+# 2010 Tanzania data with their constituencies
+# via a constituency link file.
 # -------------------------------------
 
-setwd("C:/Users/Tomas/Documents/LEI/pol")
+wd <- "C:/Users/Tomas/Documents/LEI/pol"
 
 library(rgdal)
 library(haven)
 library(dplyr)
 
 # -------------------------------------
-# read in the conLink file
-
-load(paste(getwd(), "data/conLink2010.RData", sep="/"))
-
+# read in the tanzania geo data 
 # -------------------------------------
-# use ward shapefile from the NBS 2012
-
-setwd("C:/Users/Tomas/Documents/LEI/pol/data/2012 Wards Shapefiles")
-TZA <- readOGR("TZwards.shp", layer="TZwards")
-
-# -------------------------------------
-# check which wards we actually need
-# using the 2010 household geovariables
-# file and the tanzania shapefile
 
 geoDir <- "C:/Users/Tomas/Documents/LEI/data/TZA/TZNPS2GEODTA/HH.Geovariables_Y2.dta"
 gps <- read_dta(geoDir) %>%
   select(y2_hhid, longitude=lon_modified, latitude=lat_modified)
 
 # -------------------------------------
+# read in a map of tanzania
+# -------------------------------------
+
+setwd("C:/Users/Tomas/Documents/LEI/pol/data/2012 Wards Shapefiles")
+TZA <- readOGR("TZwards.shp", layer="TZwards")
+
+# -------------------------------------
 # select ward of each household from
 # the TZA map and make a spatial points
 # dataframe
+# -------------------------------------
 
 # make a spatial points object
 gps_mat <- cbind(gps$longitude, gps$latitude)
@@ -52,23 +48,77 @@ wards2010 <- over(sp, TZA) %>%
   select(reg=Region_Nam, dis=District_N, ward=Ward_Name) %>%
   unique
 
-# check which are missing but first kill
-# off the islands
+# kill the islands which do not come into
+# the analysis
 
 islands <- c("Kaskazini Unguja", "Kusini Unguja", "Mjini Magharibi",
              "Kaskazini Pemba", "Kusini Pemba")
 
 wards2010 <- wards2010[!toupper(wards2010$reg) %in% toupper(islands),]
-wards <- toupper(wards2010$ward)
-missing <- !wards %in% toupper(conLink2010$ward)
-sum(missing) # 74 wards are missing
-missing_data <- wards2010[missing, ]
 
-table(missing_data$reg[drop=TRUE])
+# -------------------------------------
+# make all geographical units upper
+# case for easier comparisons
 
-# look at what is missing per region
-# and cross check with the 2015
-# constituencies information
+wards2010$reg <- toupper(wards2010$reg)
+wards2010$dis <- toupper(wards2010$dis)
+wards2010$ward <- toupper(wards2010$ward)
+
+# -------------------------------------
+# for each household we need to be able 
+# to match the legislative information
+# from the 2010 alection. read in conLink
+# file and make upper case
+
+load(paste(wd, "data/conLink2010.RData", sep="/"))
+conLink2010$reg <- toupper(conLink2010$reg)
+conLink2010$dis <- toupper(conLink2010$dis)
+conLink2010$con <- toupper(conLink2010$con)
+conLink2010$ward <- toupper(conLink2010$ward)
+
+# -------------------------------------
+# check which regions in the LSMS-ISA
+# data are not in the conLink2010 - need
+# to use earlier map!!!
+
+# for now concentrate on matching up the
+# constituencies in the conLink and the 
+# election data
+
+leg10 <- read.table(paste(wd, "data/leg10.txt", sep="/"), header=TRUE)
+
+# -------------------------------------
+# summarise the leg10 data
+
+leg10 <- group_by(leg10, region, district, const) %>% 
+  summarise(ccm=ifelse(party[which.max(votes)] %in% "CCM", 1, 0),
+            split=ifelse(length(party)==1, perc,
+                         abs(perc[party %in% "CCM"] - max(perc[!party %in% "CCM"]))))
+
+names(leg10) <- c("reg", "dis", "con", "ccm", "split")
+leg10$reg <- toupper(leg10$reg)
+leg10$dis <- toupper(leg10$dis)
+leg10$con <- toupper(leg10$con)
+
+# find which constituencies from the 
+# conLink2010 file are missing from the
+# leg10 file
+
+(missing_reg <- unique(conLink2010[!conLink2010$reg %in% leg10$reg, c(1)]))
+
+leg10$reg <- gsub("DAR ES SALAAM", "DAR-ES-SALAAM", leg10$reg)
+
+(missing_dis <- unique(conLink2010[!conLink2010$dis %in% leg10$dis, c(1, 2, 4)]))
+
+leg10$dis <- gsub("WILAYA YA ", "", leg10$dis)
+
+(missing_con <- unique(conLink2010[!conLink2010$con %in% leg10$con, c(1, 2, 3, 4)]))
+
+leg10$con <- gsub("ARUSHA  MJINI", "ARUSHA MJINI", leg10$con)
+
+# -------------------------------------
+# -------------------------------------
+# -------------------------------------
 
 # dar-es-salaam missing wards
 
@@ -486,18 +536,18 @@ wards2010_2$con <- toupper(wards2010_2$con)
 # check how many constituencies in the
 # wards2010_3 data are not in the leg data
 
-missing <- !toupper(unique(wards2010_3$con)) %in% toupper(unique(leg10$con))
+missing <- !toupper(unique(wards2010_2$con)) %in% toupper(unique(leg10$con))
 sum(missing) # 25 constituencies do not match
-unique(wards2010_3$con)[missing]
+unique(wards2010_2$con)[missing]
 
-wards2010_3$con <- gsub("HANDENI VIJIJINI", "HANDENI", wards2010_3$con)
-wards2010_3$con <- gsub("HANDENI MJINI", "HANDENI", wards2010_3$con)
-wards2010_3$con <- gsub("ARUSHA URBAN", "ARUSHA MJINI", wards2010_3$con)
-leg10$con <- gsub("ARUSHA  MJINI", "ARUSHA MJINI", leg10$con)
+wards2010_2$con <- gsub("HANDENI VIJIJINI", "HANDENI", wards2010_2$con)
+wards2010_2$con <- gsub("HANDENI MJINI", "HANDENI", wards2010_2$con)
+wards2010_2$con <- gsub("ARUSHA URBAN", "ARUSHA MJINI", wards2010_2$con)
 
-missing <- !toupper(unique(wards2010_3$con)) %in% toupper(unique(leg10$con))
+
+missing <- !toupper(unique(wards2010_2$con)) %in% toupper(unique(leg10$con))
 sum(missing) # 21 constituencies do not match
-unique(wards2010_3)[missing, c("reg", "dis.x", "con", "ward")]
+unique(wards2010_2)[missing, c("reg", "dis.x", "con", "ward")]
 
 
 wards2010_3 <- left_join(wards2010_2, leg10, by=c("reg", "con"))
