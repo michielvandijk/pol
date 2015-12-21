@@ -22,8 +22,8 @@ gps <- read_dta(geoDir) %>%
 # read in a map of tanzania
 # -------------------------------------
 
-setwd("C:/Users/Tomas/Documents/LEI/pol/data/2012 Wards Shapefiles")
-TZA <- readOGR("TZwards.shp", layer="TZwards")
+setwd("C:/Users/Tomas/Documents")
+TZA <- readRDS("GADM_2.7_TZA_adm3.rds")
 
 # -------------------------------------
 # select ward of each household from
@@ -45,14 +45,14 @@ sp <- SpatialPoints(gps_mat, llCRS)
 # and join with the data frame
 
 wards2010 <- over(sp, TZA) %>%
-  select(reg=Region_Nam, dis=District_N, ward=Ward_Name) %>%
+  select(reg=NAME_1, dis=NAME_2, ward=NAME_3) %>%
   unique
 
 # kill the islands which do not come into
 # the analysis
 
-islands <- c("Kaskazini Unguja", "Kusini Unguja", "Mjini Magharibi",
-             "Kaskazini Pemba", "Kusini Pemba")
+islands <- c("Kaskazini-Unguja", "Zanzibar South and Central", "Zanzibar West",
+             "Kaskazini-Pemba", "Kusini-Pemba")
 
 wards2010 <- wards2010[!toupper(wards2010$reg) %in% toupper(islands),]
 
@@ -63,6 +63,7 @@ wards2010 <- wards2010[!toupper(wards2010$reg) %in% toupper(islands),]
 wards2010$reg <- toupper(wards2010$reg)
 wards2010$dis <- toupper(wards2010$dis)
 wards2010$ward <- toupper(wards2010$ward)
+wards2010 <- wards2010[!is.na(wards2010$reg),]
 
 # -------------------------------------
 # for each household we need to be able 
@@ -81,9 +82,151 @@ conLink2010$ward <- toupper(conLink2010$ward)
 # data are not in the conLink2010 - need
 # to use earlier map!!!
 
-# for now concentrate on matching up the
-# constituencies in the conLink and the 
-# election data
+# regions
+(missing_reg <- unique(wards2010[!wards2010$reg %in% conLink2010$reg, c(1)]))
+
+# districts
+(missing_dis <- unique(wards2010[!wards2010$dis %in% conLink2010$dis, c(1, 2)]))
+
+conLink2010$dis <- gsub("MJINI", "URBAN", conLink2010$dis)
+conLink2010$dis <- gsub("VIJIJINI", "RURAL", conLink2010$dis)
+
+(missing_dis <- unique(wards2010[!wards2010$dis %in% conLink2010$dis, c(1, 2, 3)]))
+
+# wards
+(missing_ward <- unique(wards2010[!wards2010$ward %in% conLink2010$ward, c(1, 2, 3)]))
+
+conLink2010$ward <- gsub("MAJI YA CHAI", "MAJIYA CHAI", conLink2010$ward)
+conLink2010$ward <- gsub("KELAMFUA/MOKALA", "KELAMFUA MOKALA", conLink2010$ward)
+conLink2010$ward <- gsub("KIRONGO/SAMANGA", "KIRONGO SAMANGA", conLink2010$ward)
+conLink2010$ward <- gsub("ISONGO", "LSONGO", conLink2010$ward)
+conLink2010$ward <- gsub("LUMEMO", "LUMELO", conLink2010$ward)
+conLink2010$ward <- gsub("ILALA", "LLALA", conLink2010$ward)
+conLink2010$ward <- gsub("MJIMWEMA", "MJI MWEMA", conLink2010$ward)
+conLink2010$ward <- gsub("KIVINJE/SINGINO", "KIVINJE SINGINO", conLink2010$ward)
+conLink2010$ward <- gsub("KILIMARONDO", "KILIMA RONDO", conLink2010$ward)
+conLink2010$ward <- gsub("CHIENJELE", "CHIENJERE", conLink2010$ward)
+conLink2010$ward <- gsub("CHIWONGA/NANDWAHI", "CHIWONGA", conLink2010$ward)
+conLink2010$ward <- gsub("NAHNYANGA", "NANHYANGA", conLink2010$ward)
+conLink2010$ward <- gsub("MAKONGOLOSI", "MAKONGOROSI", conLink2010$ward)
+conLink2010$ward <- gsub("ISANGE", "LSANGE", conLink2010$ward)
+conLink2010$ward <- gsub("NZEGA MJINI", "NZAGA MJINI", conLink2010$ward)
+conLink2010$ward <- gsub("IGIGWA", "LGIGWA", conLink2010$ward)
+conLink2010$ward <- gsub("HERU USHINGO", "ERU USHINGO", conLink2010$ward)
+conLink2010$ward <- gsub("MUNZEZE", "MUZENZE", conLink2010$ward)
+conLink2010$ward <- gsub("IZIGO", "LZIGO", conLink2010$ward)
+conLink2010$ward <- gsub("BUPANDWA", "BUPANDWAMHELA", conLink2010$ward)
+
+# some have just not come through
+# and can be added in straight from
+# file.
+
+conLink2010 <- rbind(conLink2010,
+      data.frame(reg="TANGA", dis="KOROGWE", con="KOROGWE RURAL", ward="MASHEWA",
+           voters=1092, male=550, female=542))
+conLink2010 <- rbind(conLink2010,
+      data.frame(reg="TANGA", dis="KOROGWE", con="KOROGWE RURAL", ward="KERENGE",
+           voters=1443, male=800, female=643))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="TANGA", dis="KOROGWE", con="KOROGWE URBAN", ward="KOROGWE",
+           voters=5825, male=2946, female=2879))
+conLink2010 <- rbind(conLink2010,
+                     data.frame(reg="TANGA", dis="KOROGWE", con="KOROGWE RURAL", ward="MAGOMA",
+           voters=1341, male=725, female=616))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="TANGA", dis="HANDENI", con="HANDENI", ward="MAZINGARA",
+           voters=1518, male=758, female=760))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="MTWARA", dis="NEWALA", con="NEWALA", ward="MCHOLI II",
+                                voters=533, male=264, female=269))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="MBEYA", dis="ILEJE", con="ILEJE", ward="ISONGOLE",
+                                voters=4381, male=1913, female=2468))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="MBEYA", dis="MBOZI", con="MBOZI MAGHARIBI", ward="LSANSA",
+                                voters=19699, male=8726, female=10973))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="MBEYA", dis="MBOZI", con="MBOZI MAGHARIBI", ward="LSANSA",
+                                voters=19699, male=8726, female=10973))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="LINDI", dis="LIWALE", con="LIWALE", ward="LIWALE \'B\'",
+                                voters=3554, male=1708, female=1846))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="TABORA", dis="NZEGA", con="NZEGA", ward="MILAMBO",
+                                voters=4777, male=2255, female=2522))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="DODOMA", dis="DODOMA URBAN", con="DODOMA URBAN", ward="CHILANGA",
+                                voters=1439, male=681, female=758))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="DODOMA", dis="DODOMA RURAL", con="MTERA", ward="MVUMI MISSION",
+                                voters=8912, male=3811, female=5101))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="DODOMA", dis="DODOMA RURAL", con="BAHI", ward="CHIBELELA",
+                                voters=4962, male=2117, female=2845))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="DODOMA", dis="DODOMA RURAL", con="BAHI", ward="BAHI",
+                                voters=8741, male=4277, female=4464))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="MOROGORO", dis="MOROGORO RURAL", con="MOROGORO KUSINI MASHARIKI", ward="MKUYUNI",
+                                voters=10718, male=4802, female=5916))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="KILIMANJARO", dis="HAI", con="SIHA", ward="SIHA KATI",
+                                voters=31183, male=14901, female=16282))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="LINDI", dis="KILWA", con="KILWA KUSINI", ward="PANDE",
+                                voters=5509, male=2535, female=2974))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="MTWARA", dis="NEWALA", con="MASASI", ward="NANGANGA",
+                                voters=10686, male=5094, female=5592))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="MTWARA", dis="MTWARA URBAN", con="MASASI", ward="MWENA",
+                                voters=5997, male=2992 , female=3005))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="RUVUMA", dis="NAMTUMBO", con="PERAMIHO", ward="MATIMIRA",
+                                voters=18051, male=8660, female=9391))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="TABORA", dis="URAMBO", con="NZEGA", ward="MILAMBO",
+                                voters=1001, male=491, female=510))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="KAGERA", dis="BUKOBA RURAL", con="NKENGE", ward="KASAMBYA",
+                                voters=10237, male=4905, female=5332))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="KAGERA", dis="BUKOBA RURAL", con="NKENGE", ward="KITOBO",
+                                voters=4080, male=1833, female=2247))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="KAGERA", dis="BUKOBA RURAL", con="NKENGE", ward="BUGANDIKA",
+                                voters=4889, male=2154, female=2735))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="KAGERA", dis="BIHARAMULO", con="BIHARAMULO MASHARIKI", ward="BUSERESERE",
+                                voters=4069, male=2006, female=2063))
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="MWANZA", dis="NYAMAGANA", con="ILEMELA", ward="NYAMANORO",
+                                voters=27933, male=14034, female=13899))
+
+
+# LUMUMA ward is completely absent from the
+# conLink2010 file. however information
+# is available for the 2015 election
+
+conLink2010 <- rbind(conLink2010, 
+                     data.frame(reg="DODOMA", dis="MPWAPWA", con="KIBAKWE", ward="LUMUMA",
+                                voters=NA, male=NA, female=NA))
+
+# check how many are still missing
+# just the one missing in the lake
+# use google maps to find it later
+
+(missing_ward <- unique(wards2010[!wards2010$ward %in% conLink2010$ward, c(1, 2, 3)]))
+(missing_dis <- unique(wards2010[!wards2010$dis %in% conLink2010$dis, c(1, 2, 3)]))
+
+# join the LSMS-ISA data with the conLink file
+
+wards2010_2 <- left_join(wards2010, conLink2010)
+t <- group_by(wards2010_2, reg, dis, ward, con) %>%
+  summarise(n=n())
+
+# -------------------------------------
+# read in the legislative election data
 
 leg10 <- read.table(paste(wd, "data/leg10.txt", sep="/"), header=TRUE)
 
@@ -115,439 +258,78 @@ leg10$dis <- gsub("WILAYA YA ", "", leg10$dis)
 (missing_con <- unique(conLink2010[!conLink2010$con %in% leg10$con, c(1, 2, 3, 4)]))
 
 leg10$con <- gsub("ARUSHA  MJINI", "ARUSHA MJINI", leg10$con)
+leg10$con <- gsub("DODOMA URBAN", "DODOMA MJINI", leg10$con)
+leg10$con <- gsub("KOROGWE VIJIJINI", "KOROGWE RURAL", leg10$con)
+leg10$con <- gsub("KOROGWE MJINI", "KOROGWE URBAN", leg10$con)
+
+tunduru_kaskazini <- c("KIDODOMA", "MATEMANGA", "MINDU",
+                       "MUHUWESI", "MLINGOTI MAGHARIBI",
+                       "MLINGOTI MASHARIKI", "NANDEMBO",
+                       "LIGUNGA", "KALULU", "NAMWINYU",
+                       "NAMPUNGU", "NGAPA", "NAKAPANYA")
+tunduru_kusini <- c("LIGOMA", "LUKUMBULE", "MCHESI",
+                    "MBESA", "NAMASAKATA", "MARUMBA",
+                    "MISECHELA", "MCHOTEKA", "MTINA",
+                    "NALASI", "TUWEMACHO")
+
+# in 2010 there are only results for TUNDURU,
+# no distinction for north and south
+tunduru <- conLink2010[conLink2010$con %in% "TUNDURU",]
+conLink2010 <- conLink2010[!conLink2010$con %in% "TUNDURU",]
+tunduru$con <- ifelse(tunduru$ward %in% tunduru_kusini, "TUNDURU KUSINI",
+                      ifelse(tunduru$ward %in% tunduru_kaskazini, "TUNDURU KASKAZINI", NA))
+conLink2010 <- rbind(conLink2010, tunduru)
+
+# missing from singida
+
+SINGIDA_MAGHARIBI <- c("IHANJA", "IRISYA", "MGUNGIRA",
+                       "MINYUGHE", "MUHINTIRI", "MWARU",
+                       "PUMA", "SEPUKA") 
+SINGIDA_MASHARIKI <- c("IKUNGI", "ISSUNA", "DUNG'UNYI",
+                       "MANG'ONYI", "MISUGHAA", "MUNGAA",
+                       "NTUNTU", "SIUYU")
+
+SINGIDA <- conLink2010[conLink2010$con %in% "SINGIDA KUSINI",]
+conLink2010 <- conLink2010[!conLink2010$con %in% "SINGIDA KUSINI",]
+SINGIDA$con <- ifelse(SINGIDA$ward %in% SINGIDA_MAGHARIBI, "SINGIDA MAGHARIBI",
+                      ifelse(SINGIDA$ward %in% SINGIDA_MASHARIKI, "SINGIDA MASHARIKI", NA))
+conLink2010 <- rbind(conLink2010, SINGIDA)
+
+# NKASI
+NKASI_KASKAZINI <- c("MKWAMBA", "KIRANDO", "MTENGA", "NAMANYERE",
+                     "KABWE")
+NKASI_KUSINI <- c("NINDE", "WAMPEMBE", "ISALE", "KATE",
+                  "KIPANDE", "SINTALI", "CHALA", "KALA")
+
+NKASI <- conLink2010[conLink2010$con %in% "NKASI",]
+conLink2010 <- conLink2010[!conLink2010$con %in% "NKASI",]
+NKASI$con <- ifelse(NKASI$ward %in% NKASI_KASKAZINI, "NKASI KASKAZINI",
+                      ifelse(NKASI$ward %in% NKASI_KUSINI, "NKASI KUSINI", NA))
+conLink2010 <- rbind(conLink2010, NKASI)
+
+# MPANDA VIJIJINI
+
+# MPANDA_VIJIJINI <- c("IKOLA", "KABUNGU", "KAREMA", "KATUMA",
+#                      "MISHAMO", "KATUMBA", "MPANDA NDOGO",
+#                      "MWESE", "ILELA", "ILUNDE", "INYONGA",
+#                      "")
+# MPANDA_MJINI <- c("KASOKOLA")
+# KATAVI <- c("ILELA", "ILUNDE", "INYONGA")
+
+# maswa
+
+MASWA_MASHARIKI <- c("SUKUMA", "BUDEKWA", "DAKAMA", "BUSILILI",
+                     "LALAGO", "NGULIGULI", "IPILILO")
+MASWA_MAGHARIBI <- c("SHISHIYU", "ISANGA", "MASELA", "BADI", 
+                     "KADOTO", "KULIMI", "NYABUBINZA", "MALAMPAKA")
+
+MASWA <- conLink2010[conLink2010$con %in% "MASWA",]
+conLink2010 <- conLink2010[!conLink2010$con %in% "MASWA",]
+MASWA$con <- ifelse(MASWA$ward %in% MASWA_MASHARIKI, "MASWA MASHARIKI",
+                    ifelse(MASWA$ward %in% MASWA_MAGHARIBI, "MASWA MAGHARIBI", NA))
+conLink2010 <- rbind(conLink2010, MASWA)
 
 # -------------------------------------
 # -------------------------------------
 # -------------------------------------
 
-# dar-es-salaam missing wards
-
-missing_data[missing_data$reg %in% "Dar-es-salaam",]
-conLink2010$ward <- gsub("Hananasif", "Hananasifu", conLink2010$ward)
-
-reg <- rep("Dar-es-salaam", 7)
-dis <- c("Kinondoni", "Kinondoni", "Kinondoni", "Ilala", "Temeke", "Temeke", "Temeke")
-con <- c("Kawe", "Kawe", "Kibamba", "Ukonga", "Kigamboni", "Mbagala", "Mbagala")
-ward <- c("Wazo", "Mabwepande", "Saranga", "Majohe", "Tungi", "Mianzini", "Kijichi")
-voters <- NA
-male <- NA
-female <- NA
-DES_miss <- data.frame(reg, dis, con, ward, voters, male, female)
-
-conLink2010 <- rbind(conLink2010, DES_miss)
-
-# ARUSHA missing wards
-missing_data[missing_data$reg%in% "Arusha",]
-
-Arusha_miss <- data.frame(
-  reg="Arusha",
-  dis="Arusha",
-  con="Arusha Urban",
-  ward="Olasiti",
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Arusha_miss)
-
-# dodoma missing wards
-
-missing_data[missing_data$reg%in% "Dodoma",]
-
-Dodoma_miss <- data.frame(
-  reg="Dodoma",
-  dis="Dodoma",
-  con="Dodoma Mjini",
-  ward="Chigongwe",
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Dodoma_miss)
-
-# Geita missing wards 
-
-# Iringa Missing wards
-missing_data[missing_data$reg%in% "Iringa",]
-
-Iringa_miss <- data.frame(
-  reg=rep("Iringa", 2),
-  dis=c("Iringa", "Kilolo"),
-  con=c("Iringa Mjini", "Kilolo"),
-  ward=c("Isakalilo", "Ruaha Mbuyuni"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Iringa_miss)
-
-# missing wards Kagera
-missing_data[missing_data$reg%in% "Kagera",]
-
-Kagera_miss <- data.frame(
-  reg="Kagera",
-  dis="Missenyi",
-  con="Nkenge",
-  ward="Kassambya",
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Kagera_miss)
-
-# missing wards katavi
-missing_data[missing_data$reg %in% "Katavi",]
-
-Katavi_miss <- data.frame(
-  reg="Katavi",
-  dis="Nsimbo",
-  con="Nsimbo",
-  ward="Litapunga",
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Katavi_miss)
-
-# missing wards Kigoma
-missing_data[missing_data$reg%in% "Kigoma",]
-
-Kigoma_miss <- data.frame(
-  reg=rep("Kigoma", 2),
-  dis=c("Kasulu", "Buhigwe"),
-  con=c("Kasulu", "Buhigwe"),
-  ward=c("Heru Shingo", "Mugera"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Kigoma_miss)
-
-# Kilimajaro missing wards
-missing_data[missing_data$reg%in% "Kilimanjaro",]
-
-reg <- rep("Kilimanjaro", 5)
-dis <- c("Rombo", rep("Moshi", 3), "Siha")
-con <- c("Rombo", "Vunjo", "Moshi Vijijini", "Vunjo", "Siha")
-ward <- c("Kirongo Samanga", "MwikaKaskazini",
-          "Old Moshi Mashariki", "KiruaVunjo Mashariki",
-          "Olkolili")
-voters <- NA
-male <- NA
-female <- NA
-Kili_miss <- data.frame(reg, dis, con, ward, voters, male, female)
-
-conLink2010 <- rbind(conLink2010, Kili_miss)
-
-# Misisng manyara wards
-
-missing_data[missing_data$reg%in% "Manyara",]
-
-reg <- rep("Manyara", 5)
-dis <- c("Babati", "Mbulu", rep("Simanjiro", 2), "Kiteto")
-con <- c("Babati Vijijini", "Mbulu Vijijini", rep("Simanjiro", 2), "Kiteto")
-ward <- c("Nar", "Dinamu", "Naisinyai", "Endiantu", "Chapakazi")
-voters <- NA
-male <- NA
-female <- NA
-Many_miss <- data.frame(reg, dis, con, ward, voters, male, female)
-
-conLink2010 <- rbind(conLink2010, Many_miss)
-
-# missing Lindi wards
-missing_data[missing_data$reg%in% "Lindi",]
-
-reg <- rep("Lindi", 5)
-dis <- c(rep("Kilwa", 2), "Nachingwea", rep("Liwale", 2))
-con <- c("Kilwa Kaskazini", "Kilwa Kusini", "Nachingwea", rep("Liwale", 2))
-ward <- c("Kibata", "Kivinjesingino", "Kilima Rondo", "Lilombe", "Liwale \'B\'")
-voters <- NA
-male <- NA
-female <- NA
-lindi_miss <- data.frame(reg, dis, con, ward, voters, male, female)
-
-conLink2010 <- rbind(conLink2010, lindi_miss)
-
-# missing wards Mara
-missing_data[missing_data$reg%in% "Mara",]
-
-Mara_miss <- data.frame(
-  reg="Mara",
-  dis="Bunda",
-  con="Bunda Mjini",
-  ward="Balili",
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Mara_miss)
-
-# Missing wards Mbeya
-
-missing_data[missing_data$reg%in% "Mbeya",]
-
-Mbeya_miss <- data.frame(
-  reg=rep("Mbeya", 3),
-  dis=c("Chunya", "Mbeya Rural", "Mbozi"),
-  con=c("Lupa", "Mbeya Vijijini", "Vwawa"),
-  ward=c("Makongorosi", "Itawa", "Nanyala"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Mbeya_miss)
-
-# missing wards Mtwara
-missing_data[missing_data$reg%in% "Mtwara",]
-
-Mtwara_miss <- data.frame(
-  reg=rep("Mtwara", 8),
-  dis=c(rep("Mtwara Rural", 2), "Masasi Township Authority",
-        "Tandahimba", rep("Newala", 4)),
-  con=c("Nanyamba", "Mtwara Vijijini", "Masasi", "Tandahimba",
-        rep("Newala Mjini", 2), rep("Newala Vijijini", 2)),
-  ward=c("Mtimbwilimbwi", "Libobe", "Migongo", "Nanhyanga",
-         "Luchindu", "Mcholi II", "Mtunguru", "Chiwonga"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, Mtwara_miss)
-
-# missing wards Njombe
-missing_data[missing_data$reg%in% "Njombe",]
-
-njombe_miss <- data.frame(
-  reg="Njombe",
-  dis="Njombe Urban",
-  con="Njombe Mjini",
-  ward="Ramadhani",
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, njombe_miss)
-
-# missing wards Pwani
-
-missing_data[missing_data$reg%in% "Pwani",]
-
-pwani_miss <- data.frame(
-  reg=rep("Pwani", 2),
-  dis=c("Bagamoyo", "Kibaha Urban"),
-  con=c("Bagamoyo", "Kibaha Mjini"),
-  ward=c("Bwilingu", "Mbwawa"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, pwani_miss)
-
-# missing wards Ruvuma
-missing_data[missing_data$reg%in% "Ruvuma",]
-
-ruvu_miss <- data.frame(
-  reg=rep("Ruvuma", 8),
-  dis=c(rep("Tunduru", 3), rep("Songea Rural", 2),
-        "Nyasa", rep("Namtumbo", 2)),
-  con=c(rep("Tunduru Kaskazini",3), rep("Peramiho", 2),
-        "Nyasa", rep("Namtumbo", 2)),
-  ward=c("Sisikwasisi", "Mchangani", "Nanjoka", "Muhuruku",
-         "Peramiho", "Luhangarasi", "Hanga", "Mchomoro"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, ruvu_miss)
-
-# missing wards Shinyanga
-missing_data[missing_data$reg%in% "Shinyanga",]
-
-shin_miss <- data.frame(
-  reg=rep("Shinyanga", 2),
-  dis=rep("Shinyanga Urban", 2),
-  con=rep("Shinyanga Mjini", 2),
-  ward=c("Lubaga", "Old Shinyanga"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, shin_miss)
-
-# Missing wards Simiyu
-missing_data[missing_data$reg%in% "Simiyu",]
-
-simi_miss <- data.frame(
-  reg=rep("Simiyu", 2),
-  dis=c("Itilima", "Bariadi"),
-  con=c("Itilima", "Bariadi"),
-  ward=c("Budalabujiga", "Ngulyati"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, simi_miss)
-
-# missing wards Singida
-missing_data[missing_data$reg%in% "Singida",]
-
-sing_miss <- data.frame(
-  reg=rep("Singida", 3),
-  dis=c("Ikungi", "Manyoni", "Singida Urban"),
-  con=c("Singida Mashariki", "Manyoni Magharibi", "Singida Mjini"),
-  ward=c("Mkiwa", "Mitundu", "Mitunduru"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, sing_miss)
-
-# missing wards Tabora
-
-missing_data[missing_data$reg%in% "Tabora",]
-
-tabo_miss <- data.frame(
-  reg=rep("Tabora", 3),
-  dis=c("Kaliua", "Sikonge", "Tabora Urban"),
-  con=c(NA, "Sikonge", "Tabora Mjini"),
-  ward=c("Milambo", "Mpombwe", "Ng`ambo"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, tabo_miss)
-
-# missing wards Tanga
-
-missing_data[missing_data$reg%in% "Tanga",]
-
-tang_miss <- data.frame(
-  reg=rep("Tanga", 7),
-  dis=c("Korogwe", "Korogwe Township Authority",
-        NA, "Muheza", "Pangani", "Handeni",
-        "Handeni Township Authority"),
-  con=c("Korogwe Vijijini", "Korogwe Mjini", NA,
-        "Muheza", "Pangani", "Handeni Vijijini",
-        "Handeni Mjini"),
-  ward=c("Kerenge", "Kilole", "Maheza ngulu", "Mbomole",
-         "Mikunguni", "Mazingara", "Kwenjugo"),
-  voters=NA,
-  male=NA,
-  female=NA)
-
-conLink2010 <- rbind(conLink2010, tang_miss)
-
-# check again what is missing
-# from the conLink file
-
-missing <- !wards %in% toupper(conLink2010$ward)
-sum(missing) # 3 wards are missing
-missing_data <- wards2010[missing, ]
-table(missing_data$reg[drop=TRUE])
-
-rm(list=ls()[!ls() %in% c("conLink2010", "gps", "wards2010")])
-
-# -------------------------------------
-# join the wards and the conlink together
-
-wards2010 <- wards2010[!is.na(wards2010$reg), ]
-wards2010$reg <- toupper(wards2010$reg)
-wards2010$ward <- toupper(wards2010$ward)
-conLink2010$reg <- toupper(conLink2010$reg)
-conLink2010$ward <- toupper(conLink2010$ward)
-
-wards2010_2 <- left_join(wards2010, conLink2010, by=c("reg", "ward"))
-
-# still missing 27 constituencies
-
-wards2010_2[is.na(wards2010_2$con),]
-
-# add these in
-
-reg <- c(rep("Njombe", 5), rep("Simiyu", 4), rep("KATAVI", 3), "Rukwa")
-dis <- c("Makete", "Wanging'ombe", rep("Ludewa", 3),
-         rep("Maswa", 2), rep("Meatu", 2), "Mpanda Rural",
-         rep("Mpanda Urban", 2), "Sumbawanga Urban")
-con <- c("Makete", "Wanging'ombe", rep("Ludewa", 3),
-         rep("Maswa Magharibi", 2), "Meatu", "Kisesa", "Mpanda Vijijini",
-         rep("Mpanda Mjini", 2), "Sumbawanga Mjini")
-ward <- c("MATAMBA", "MDANDU", "MAWENGI", "LUPINGU", "LUDEWA",
-          "BUCHAMBI", "BADI", "MWAMISHALI", "MWABUSALU", "MISHAMO",
-          "KAWAJENSE", "KASHAULILI", "Majengo")
-voters <- NA
-male <- NA
-female <- NA
-
-x <- data.frame(reg, dis, con, ward, voters, male, female)
-conLink2010 <- rbind(conLink2010, x)
-
-wards2010$reg <- toupper(wards2010$reg)
-wards2010$ward <- toupper(wards2010$ward)
-conLink2010$reg <- toupper(conLink2010$reg)
-conLink2010$ward <- toupper(conLink2010$ward)
-
-wards2010_2 <- left_join(wards2010, conLink2010, by=c("reg", "ward"))
-
-# still missing 14 constituencies
-
-wards2010_2[is.na(wards2010_2$con),]
-
-reg <- c("LINDI", "SINGIDA", "Tabora", "Kigoma", "SHINYANGA")
-dis <- c("Kilwa", "Ikungi", "Sikonge", "Kibondo", "SHINYANGA Rural")
-con <- c("Kilwa Kusini", "Singida Magharibi", "Sikonge", "MUHAMBWE",
-         "Solwa")
-ward <- c("Pande", "KITUNTU", "KISANGA", "KIBONDO", "MWENGE")
-
-x <- data.frame(reg, dis, con, ward, voters, male, female)
-conLink2010 <- rbind(conLink2010, x)
-
-wards2010$reg <- toupper(wards2010$reg)
-wards2010$ward <- toupper(wards2010$ward)
-conLink2010$reg <- toupper(conLink2010$reg)
-conLink2010$ward <- toupper(conLink2010$ward)
-
-wards2010_2 <- left_join(wards2010, conLink2010, by=c("reg", "ward"))
-
-# still missing 9 constituencies
-wards2010_2[is.na(wards2010_2$con),]
-
-# -------------------------------------
-# read in the election results data
-# and check what constituencies are
-# missing from the conLink file
-
-setwd("C:/Users/Tomas/Documents/LEI/pol/data")
-leg10 <- read.table("leg10.txt", header=TRUE)
-
-# -------------------------------------
-# summarise the leg10 data
-
-leg10 <- group_by(leg10, region, district, const) %>% 
-  summarise(ccm=ifelse(party[which.max(votes)] %in% "CCM", 1, 0),
-            split=ifelse(length(party)==1, perc,
-                         abs(perc[party %in% "CCM"] - max(perc[!party %in% "CCM"]))))
-
-names(leg10) <- c("reg", "dis", "con", "ccm", "split")
-leg10$reg <- as.character(leg10$reg)
-leg10$con <- toupper(as.character(leg10$con))
-wards2010_2$con <- toupper(wards2010_2$con)
-
-# -------------------------------------
-# check how many constituencies in the
-# wards2010_3 data are not in the leg data
-
-missing <- !toupper(unique(wards2010_2$con)) %in% toupper(unique(leg10$con))
-sum(missing) # 25 constituencies do not match
-unique(wards2010_2$con)[missing]
-
-wards2010_2$con <- gsub("HANDENI VIJIJINI", "HANDENI", wards2010_2$con)
-wards2010_2$con <- gsub("HANDENI MJINI", "HANDENI", wards2010_2$con)
-wards2010_2$con <- gsub("ARUSHA URBAN", "ARUSHA MJINI", wards2010_2$con)
-
-
-missing <- !toupper(unique(wards2010_2$con)) %in% toupper(unique(leg10$con))
-sum(missing) # 21 constituencies do not match
-unique(wards2010_2)[missing, c("reg", "dis.x", "con", "ward")]
-
-
-wards2010_3 <- left_join(wards2010_2, leg10, by=c("reg", "con"))
