@@ -15,7 +15,7 @@ ward_con_link2010 <- read.csv("ward_con_link2010.csv")
 # read in the legislative and presidenial results
 
 leg2010 <- read.csv("leg2010.csv") %>% select(-dis)
-prez2010 <- read.csv("prez/prez2010.csv") %>% select(-dis)
+prez2010 <- read.csv("prez2010/prez2010.csv") %>% select(-dis)
 
 pol2010 <- left_join(ward_con_link2010, leg2010) %>% left_join(prez2010)
 
@@ -30,6 +30,10 @@ rm(list=ls()[!ls() %in% "pol2010"])
 geoDir1 <- "C:/Users/Tomas/Documents/LEI/data/TZA/TZNPS2GEODTA/HH.Geovariables_Y2.dta"
 gps1 <- read_dta(geoDir1) %>%
   select(y2_hhid, longitude=lon_modified, latitude=lat_modified)
+
+geoDir2 <- "C:/Users/Tomas/Documents/LEI/data/TZA/TZA_2012_LSMS_v01_M_STATA_English_labels/HouseholdGeovars_Y3.dta"
+gps2 <- read_dta(geoDir2) %>%
+  select(y3_hhid, longitude=lon_dd_mod, latitude=lat_dd_mod)
 
 setwd("C:/Users/Tomas/Documents")
 TZA <- readRDS("GADM_2.7_TZA_adm3.rds")
@@ -49,28 +53,44 @@ llCRS <- CRS(proj4string(TZA))
 # make a spatial points object
 gps_mat <- cbind(gps1$longitude, gps1$latitude)
 row.names(gps_mat) <- 1:nrow(gps_mat)
-
-
 sp <- SpatialPoints(gps_mat, llCRS)
 
 # overlay the map with the points
 # and join with the data frame
 
-wards2010 <- over(sp, TZA) %>%
+data2010 <- over(sp, TZA) %>%
   select(reg=NAME_1, dis=NAME_2, ward=NAME_3) 
+data2010 <- cbind(gps1$y2_hhid, data2010)
+names(data2010) <- c("y2_hhid", "reg", "dis", "ward")
 
+# 2012
 
+# make a spatial points object
+gps_mat <- cbind(gps2$longitude, gps2$latitude)
+row.names(gps_mat) <- 1:nrow(gps_mat)
+sp <- SpatialPoints(gps_mat, llCRS)
 
-gps1 <- cbind(gps1, wards2010)
-gps1$reg <- toupper(gps1$reg)
-gps1$dis <- toupper(gps1$dis)
-gps1$ward <- toupper(gps1$ward)
+# overlay the map with the points
+# and join with the data frame
 
-gps1 <- left_join(gps1, pol2010)
+data2012 <- over(sp, TZA) %>%
+  select(reg=NAME_1, dis=NAME_2, ward=NAME_3) 
+data2012 <- cbind(gps2$y3_hhid, data2012)
+names(data2012) <- c("y3_hhid", "reg", "dis", "ward")
 
-# kill of the islands
+# make all names uppercase
+
+data2010$reg <- toupper(data2010$reg); data2012$reg <- toupper(data2012$reg)
+data2010$dis <- toupper(data2010$dis); data2012$dis <- toupper(data2012$dis)
+data2010$ward <- toupper(data2010$ward); data2012$ward <- toupper(data2012$ward)
+
+# we do not need any observations on the islands
+# of Tanzania
 
 islands <- c("KASKAZINI-UNGUJA", "ZANZIBAR SOUTH AND CENTRAL", "ZANZIBAR WEST",             
              "KASKAZINI-PEMBA", "KUSINI-PEMBA")
+data2010 <- data2010[!data2010$reg %in% islands, ]
+data2012 <- data2012[!data2012$reg %in% islands, ]
 
-gps1 <- gps1[!gps1$reg %in% islands, ]
+data2010 <- left_join(data2010, pol2010)
+data2012 <- left_join(data2012, pol2010)
