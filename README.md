@@ -3,4 +3,13 @@ Political Economy Analysis
 
 Data and code for linking wards in Tanzania to their respective constituencies. 
 
-This repository contains the original shape file from the 2012 NBS ward level map, the pdf file that links constituencies and wards together, an altered .txt version of this pdf file that has been cleaned in order to match with the NBS shapefile. Instructions for going between the original pdf and cleaned pdf
+ - the maps used for joining data come from GADM
+ - all political data harvested from the Tanzanian National Electoral Comission
+ 
+ Code (6 files)
+ 
+ - two code files, one each for scraping the 2005 and 2010 political data
+ - two code files, one each for cleaning the 2005 and 2010 presidential results. Not scraped, data download directly as .xls from the nec website.
+ - one file for linking only the 2010 presidential and legislative results to the survey data via the households ward, disrict and region and the GADM map of tanzania.
+ 
+ Data ()

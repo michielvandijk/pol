@@ -11,6 +11,8 @@ setwd("c:/users/tomas/documents/LEI/pol/data/prez")
 # read in data
 prez2010 <- data.frame()
 
+# note that some excel files were missing when downloaded
+# from nec website
 for( i in c(1:12, 16:24)){
   fileName <- paste("prez", i, ".csv", sep="")
   file <- read.csv(fileName)

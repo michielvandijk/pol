@@ -94,3 +94,8 @@ data2012 <- data2012[!data2012$reg %in% islands, ]
 
 data2010 <- left_join(data2010, pol2010)
 data2012 <- left_join(data2012, pol2010)
+
+setwd("C:/Users/Tomas/Documents/LEI/pol/data")
+
+write.csv(data2010, "polInt2010.csv", row.names=FALSE)
+write.csv(data2012, "polInt2012.csv", row.names=FALSE)
