@@ -14,7 +14,7 @@ ward_con_link2010 <- read.csv("link_files/ward_con_link2010.csv")
 
 # read in the legislative and presidenial results
 
-leg2010 <- read.csv("leg2010.csv") %>% select(-dis)
+leg2010 <- read.csv("legislative/leg2010.csv") %>% select(-dis)
 prez2010 <- read.csv("prez2010/prez2010.csv") %>% select(-dis)
 
 pol2010 <- left_join(ward_con_link2010, leg2010) %>% left_join(prez2010)
@@ -22,8 +22,8 @@ pol2010 <- left_join(ward_con_link2010, leg2010) %>% left_join(prez2010)
 rm(list=ls()[!ls() %in% "pol2010"])
 
 # -------------------------------------
-# now try and join this up with the 
-# actual LSMS-ISA data
+# join political election data with the
+# LSMS-ISA survey data
 # -------------------------------------
 
 # read in the gps information
@@ -35,12 +35,13 @@ geoDir2 <- "C:/Users/Tomas/Documents/LEI/data/TZA/TZA_2012_LSMS_v01_M_STATA_Engl
 gps2 <- read_dta(geoDir2) %>%
   select(y3_hhid, longitude=lon_dd_mod, latitude=lat_dd_mod)
 
-setwd("C:/Users/Tomas/Documents")
+# map from GADM
 TZA <- readRDS("GADM_2.7_TZA_adm3.rds")
 
 # -------------------------------------
 # Overlay the gps coordinates of each
-# household to match up wards
+# household to match up with ward
+# information from the 
 # -------------------------------------
 
 # make sure projection used in map is
@@ -92,10 +93,13 @@ islands <- c("KASKAZINI-UNGUJA", "ZANZIBAR SOUTH AND CENTRAL", "ZANZIBAR WEST",
 data2010 <- data2010[!data2010$reg %in% islands, ]
 data2012 <- data2012[!data2012$reg %in% islands, ]
 
+# join political data with the survey households
+# so that political information can easily be used
+# with the rest of the survey
+
 data2010 <- left_join(data2010, pol2010)
 data2012 <- left_join(data2012, pol2010)
 
-setwd("C:/Users/Tomas/Documents/LEI/pol/data")
-
+# save data
 write.csv(data2010, "polInt2010.csv", row.names=FALSE)
 write.csv(data2012, "polInt2012.csv", row.names=FALSE)
