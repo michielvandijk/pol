@@ -15,3 +15,5 @@ Data and code for linking wards in Tanzania to their respective constituencies.
  Data ()
  
  - prez2010 and prez2005 directories contain the 2010 and 2005 raw presidential results for those years, along with the final cleaned presidential results called prez2010.csv and prez2005.csv
+ 
+ - The ward_con_link2010.csv file is crucial for joining up the data. This was made by using the GADM map to find the region, district and ward of every household in the 2010 and 2012 surveys. This was then used in conjunction with the

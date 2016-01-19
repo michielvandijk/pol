@@ -10,7 +10,7 @@ library(dplyr)
 setwd("c:/users/tomas/documents/lei/pol/data")
 
 # read in the link file
-ward_con_link2010 <- read.csv("ward_con_link2010.csv")
+ward_con_link2010 <- read.csv("link_files/ward_con_link2010.csv")
 
 # read in the legislative and presidenial results
 
