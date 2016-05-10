@@ -34,8 +34,8 @@ prez2010_dis <- group_by(prez2010_dis, reg, dis) %>%
 rm(list=ls()[!ls() %in% c("prez2010_dis", "prez2010_dis_All", "dataPath")])
 
 # save the results for use in analysis later
-saveRDS(prez2010_dis_All, file.path(dataPath, "data/prez2010/prez2010_dis_All.rds"))
-saveRDS(prez2010_dis, file.path(dataPath, "data/prez2010/prez2010_dis.rds"))
+# saveRDS(prez2010_dis_All, file.path(dataPath, "data/prez2010/prez2010_dis_All.rds"))
+# saveRDS(prez2010_dis, file.path(dataPath, "data/prez2010/prez2010_dis.rds"))
 
 # constituency code - in case it's possible to make
 # a link later on.
