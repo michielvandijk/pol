@@ -3,8 +3,19 @@
 # for analysis later
 # -------------------------------------
 
+library(dplyr)
+library(reshape2)
+
 dataPath <- "C:/Users/Tomas/Documents/LEI/pol" 
 prez2010 <- readRDS(file.path(dataPath, "data/prez2010/prez2010.rds"))
+
+# In many places there are Swahili names
+# we remove this part of the name
+
+prez2010$dis <- gsub("JIJI LA ", "", prez2010$dis)
+prez2010$dis <- gsub("WILAYA YA ", "", prez2010$dis)
+prez2010$dis <- gsub("MANISPAA YA ", "", prez2010$dis)
+
 
 # summarise the data by district
 prez2010_dis <- group_by(prez2010, reg, dis, party) %>%
@@ -18,7 +29,7 @@ prez2010_dis <- mutate(prez2010_dis, percent = votes/votesTotal*100)
 # have the overall highest number of votes
 # in that district. This does not necessarily 
 # mean that they won every constituency in that
-# district
+# district. 
 
 # All party vote shares
 prez2010_dis_All <- select(prez2010_dis, reg, dis, party, percent) %>%
@@ -30,8 +41,14 @@ prez2010_dis <- group_by(prez2010_dis, reg, dis) %>%
             split_prez10=ifelse(length(party) == 1, ifelse(is.na(percent), 100, percent),
                                 abs(percent[party %in% "CCM"] - max(percent[!party %in% "CCM"],
                                                                     na.rm=TRUE))))
+# join both of these together so that for each district
+# we know what vote share each party received AND we 
+# know whether the CCM won that district AND we know 
+# the vote split between the CCM and the largest or 
+# next largest party
+prez2010 <- left_join(prez2010_dis, prez2010_dis_All)
 
-rm(list=ls()[!ls() %in% c("prez2010_dis", "prez2010_dis_All", "dataPath")])
+rm(prez2010_dis, prez2010_dis_All)
 
 # save the results for use in analysis later
 # saveRDS(prez2010_dis_All, file.path(dataPath, "data/prez2010/prez2010_dis_All.rds"))
